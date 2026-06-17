@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0221.com.ar - Taller Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Barra Superior de Navegación -->
+    <header class="site-header">
+
+        <!-- Fila Superior -->
+        <div class="header-top">
+            <div class="header-top-left">
+                <button class="sections-btn">
+                    <span>Secciones</span>
+                    <img src="icons/Secciones.svg" alt="Secciones">
+                </button>
+            </div>
+            <div class="header-top-center">
+                <a href="#" class="logo-link">
+                    <img src="icons/0221.svg" alt="0221.com.ar" class="logo-img">
+                </a>
+            </div>
+            <div class="header-top-right">
+                <a href="#" class="btn-login">Iniciar Sesión</a>
+                <a href="#" class="btn-register">Registrarse</a>
+            </div>
+        </div>
+
+        <!-- Fila Inferior -->
+        <div class="header-bottom">
+            <div class="search-bar">
+                <img src="icons/Lupa.svg" alt="Buscar">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <nav class="social-nav">
+                <a href="#" class="social-link">
+                    <img src="icons/Instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/FaceBook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/Twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/YouTube.svg" alt="YouTube">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/Linkedin.svg" alt="LinkedIn">
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Contenedor del Contenido Principal (con márgenes adaptables) -->
+    <main class="main-content">
+
+        <section class="news-section">
+
+            <!-- Tarjeta Principal (Hero) -->
+            <div class="hero-card">
+                <div class="badge-container">
+                    <div class="badge-zone">EN TU ZONA</div>
+                    <div class="badge-location">City Bell</div>
+                </div>
+
+                <div class="hero-title-container">
+                    <div>
+                        <h2 class="hero-title-badge">Crimen en City Bell</h2>
+                    </div>
+                    <div>
+                        <h2 class="hero-title-badge">La pista que cambia el caso</h2>
+                    </div>
+                </div>
+
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!-- Columna Noticia Destacada -->
+            <div class="grid-left">
+                <div class="destacada-card">
+                    <div class="badge-destacada">DESTACADA</div>
+                    <div class="destacada-title-container">
+                        <div class="destacada-title-badge">
+                            <span class="title-highlight">Paritarias.</span><span class="title-subtext">CONADU aceptó la
+                                oferta del Gobierno. </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="destacada-caption">
+                    CONADU aceptó la propuesta del gobierno y los docentes universitarios pasaran a cobrar con aumento.
+                </p>
+            </div>
+
+            <!-- Columna Clima -->
+            <div class="grid-right">
+                <div class="weather-widget">
+
+                    <!-- Estructura Clima Escritorio -->
+                    <div class="weather-info-desktop">
+                        <div class="weather-header-row">
+                            <svg class="weather-cloud-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.36 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.64-4.96z" />
+                            </svg>
+                            <span class="weather-label">CLIMA</span>
+                        </div>
+                        <div class="weather-date">Miercoles 10 de Junio</div>
+                        <div class="weather-temp">14°</div>
+                        <div class="weather-location">La Plata</div>
+                        <div class="weather-feel">SENSACIÓN TÉRMICA: 12°</div>
+                    </div>
+
+                    <!-- Estructura Clima Móvil -->
+                    <div class="weather-info-mobile">
+                        <svg class="weather-cloud-icon-mobile" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.36 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.64-4.96z" />
+                        </svg>
+                        <div class="weather-mobile-content">
+                            <div class="weather-group-temp">
+                                <span class="weather-lbl">El Clima</span>
+                                <span class="weather-val">14°</span>
+                            </div>
+                            <div class="weather-group-loc">
+                                <span class="weather-loc">La Plata</span>
+                                <span class="weather-date-mob">Miercoles 10 de Junio</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sección Más Leídas -->
+        <section class="mas-leidas-section">
+            <div class="mas-leidas-header">
+                <h2 class="mas-leidas-title">LAS MÁS LEÍDAS</h2>
+            </div>
+
+            <div class="mas-leidas-carousel">
+                <!-- Tarjeta 1 -->
+                <article class="mas-leidas-card">
+                    <div class="card-image-container">
+                        <img src="images/LasMasLeidas1.png" alt="Noticia 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">21,33%.</span>
+                        <span class="title-text">Los docentes de la UNLP aceptaron la oferta salarial que les hizo el
+                            Gobierno nacional</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="mas-leidas-card">
+                    <div class="card-image-container">
+                        <img src="images/LasMasLeidas2.png" alt="Noticia 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">"Bomba antártica".</span>
+                        <span class="title-text">Se va la niebla, pero llega una ola polar con mínimas cercanas a los
+                            cero grados</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="mas-leidas-card">
+                    <div class="card-image-container">
+                        <img src="images/LasMasLeidas3.png" alt="Noticia 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Nuevo escenario.</span>
+                        <span class="title-text">El homenaje al Indio en Berisso cambia de sede por la gran convocatoria
+                            prevista</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="mas-leidas-card">
+                    <div class="card-image-container">
+                        <img src="images/LasMasLeidas4.png" alt="Noticia 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">"Es un calvario".</span>
+                        <span class="title-text">Es de La Plata, fue estafada y ahora usan su DNI para engañar a otras
+                            personas</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Los Vecinos Reportan -->
+        <section class="vecinos-section">
+            <div class="vecinos-header">
+                <div class="vecinos-title-badge">Los vecinos reportan</div>
+                <a href="#" class="vecinos-link-badge">Hacé tu reporte</a>
+                <span class="vecinos-text-badge">Tu opinión importa</span>
+                <div class="vecinos-header-line"></div>
+            </div>
+            
+            <div class="vecinos-carousel">
+                <!-- Tarjeta 1 -->
+                <article class="vecinos-card">
+                    <div class="card-image-container">
+                        <img src="images/LosVecinosReportan1.png" alt="Noticia 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Choque y alerta.</span>
+                        <span class="title-text">Familias de alumnos de un colegio de City Bell reclaman medidas de seguridad vial en la zona</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="vecinos-card">
+                    <div class="card-image-container">
+                        <img src="images/LosVecinosReportan2.png" alt="Noticia 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Nueva manifestación.</span>
+                        <span class="title-text">Convocan a una caminata contra el proyecto de ensanchamiento del Saavedra</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="vecinos-card">
+                    <div class="card-image-container">
+                        <img src="images/LosVecinosReportan3.png" alt="Noticia 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Micros, árboles y feria.</span>
+                        <span class="title-text">Se conocieron las primeras opiniones vecinales sobre la remodelación del Parque Saavedra</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="vecinos-card">
+                    <div class="card-image-container">
+                        <img src="images/LosVecinosReportan4.png" alt="Noticia 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Reclamo en las calles.</span>
+                        <span class="title-text">"Somos un blanco a toda hora": los vecinos de Tolosa se movilizaron por el hartazgo ante la inseguridad</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Deportes -->
+        <section class="deportes-section">
+            <div class="deportes-header">
+                <span class="deportes-title-text">Deportes</span>
+                <span class="deportes-separator"></span>
+                <img src="icons/0221.svg" alt="0221.com.ar" class="deportes-logo">
+            </div>
+
+            <!-- Deportes Hero (Top Row) -->
+            <div class="deportes-hero">
+                <div class="deportes-hero-image-container">
+                    <img src="images/Deportes1.png" alt="Deportes Hero">
+                </div>
+                <div class="deportes-hero-info">
+                    <div class="deportes-hero-badge-container">
+                        <span class="deportes-hero-badge">Todo listo.</span>
+                    </div>
+                    <h2 class="deportes-hero-title">El esperanzador mensaje de Gerónimo Rulli a días del comienzo del Mundial 2026</h2>
+                </div>
+            </div>
+
+            <!-- Deportes Carousel (Bottom Row) -->
+            <div class="deportes-carousel">
+                <!-- Tarjeta 1 (Deportes 2) -->
+                <article class="deportes-card">
+                    <div class="card-image-container">
+                        <img src="images/Deportes2.png" alt="Noticia Deportes 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Atención corredores.</span>
+                        <span class="title-text">¿Cuándo y dónde retirar el kit de la Media Maratón La Plata?</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 (Deportes 3) -->
+                <article class="deportes-card">
+                    <div class="card-image-container">
+                        <img src="images/Deportes3.png" alt="Noticia Deportes 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">¿Y ahora?.</span>
+                        <span class="title-text">La traba que impide el regreso de Juan Pintado a Gimnasia</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 (Deportes 4) -->
+                <article class="deportes-card">
+                    <div class="card-image-container">
+                        <img src="images/Deportes4.png" alt="Noticia Deportes 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Nuevo candidato.</span>
+                        <span class="title-text">Un reconocido club europeo se interesó por Tiago Palacios e inició negociaciones</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 (Deportes 5) -->
+                <article class="deportes-card">
+                    <div class="card-image-container">
+                        <img src="images/Deportes5.png" alt="Noticia Deportes 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Minuto a minuto.</span>
+                        <span class="title-text">Messi habló a corazón abierto y encendió la ilusión antes del debut en el Mundial 2026 que ya comienza</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Noticias Recientes -->
+        <section class="recientes-section">
+            <!-- Destacadas Recientes (Top Row: 2 columns on desktop, stacked on mobile) -->
+            <div class="recientes-destacadas">
+                <!-- Tarjeta Grande 1 (NoticiaR5) -->
+                <article class="recientes-grande-card">
+                    <div class="card-image-container">
+                        <img src="images/NoticiaR5.png" alt="Noticia Reciente Grande 1">
+                    </div>
+                    <h1 class="card-title">
+                        <span class="title-highlight">Inocencia fiscal.</span>
+                        <span class="title-text">¿Qué es el régimen simplificado al que pidió adherirse Adorni y cómo funciona?</span>
+                    </h1>
+                </article>
+
+                <!-- Tarjeta Grande 2 (NoticiaR6) -->
+                <article class="recientes-grande-card">
+                    <div class="card-image-container">
+                        <img src="images/NoticiaR6.png" alt="Noticia Reciente Grande 2">
+                    </div>
+                    <h1 class="card-title">
+                        <span class="title-highlight">Ante ARCA.</span>
+                        <span class="title-text">Manuel Adorni pidió adherirse al régimen simplificado de Ganancias de la Ley de Inocencia Fiscal</span>
+                    </h1>
+                </article>
+            </div>
+
+            <!-- Carrusel Recientes (Bottom Row: 4 columns on desktop, carousel on mobile) -->
+            <div class="recientes-carousel">
+                <!-- Tarjeta 1 (NoticiaR1) -->
+                <article class="recientes-card">
+                    <div class="card-image-container">
+                        <img src="images/NoticiaR1.png" alt="Noticia Reciente 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Tras más de 5 años.</span>
+                        <span class="title-text">Juzgan a un odontólogo platense acusado de abusar de su prima en una fiesta</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 (NoticiaR2) -->
+                <article class="recientes-card">
+                    <div class="card-image-container">
+                        <img src="images/NoticiaR2.png" alt="Noticia Reciente 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">"Una enorme infamia".</span>
+                        <span class="title-text">Kicillof respaldó a Cristina Kirchner a un año de su condena por la causa Vialidad</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 (NoticiaR3) -->
+                <article class="recientes-card">
+                    <div class="card-image-container">
+                        <img src="images/NoticiaR3.png" alt="Noticia Reciente 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Corte Suprema.</span>
+                        <span class="title-text">Provincia y Nación se reunirán por la deuda previsional de $2,2 billones</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 (NoticiaR4) -->
+                <article class="recientes-card">
+                    <div class="card-image-container">
+                        <img src="images/NoticiaR4.png" alt="Noticia Reciente 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Festejo ricotero.</span>
+                        <span class="title-text">Lucas Bruera fue campeón en Venezuela y lo celebró con un homenaje al Indio Solari</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
