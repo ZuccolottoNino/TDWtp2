@@ -1,0 +1,2566 @@
+/* ==========================================
+   CARGA DE FUENTES LOCALES (Montserrat)
+   ========================================== */
+
+/* Montserrat 100 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-100.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-100italic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat 200 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-200.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-200italic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat 300 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-300italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat 400 / Regular */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat 500 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-500italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat 600 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-600italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat 700 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-700italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat 800 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-800.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-800italic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Montserrat 900 / Black */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/montserrat/Montserrat-900italic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* ==========================================
+   CARGA DE FUENTES LOCALES (Public Sans)
+   ========================================== */
+
+/* Public Sans 100 */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-100.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-100italic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Public Sans 200 */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-200.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-200italic.woff2') format('woff2');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Public Sans 300 */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-300italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Public Sans 400 / Regular */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Public Sans 500 */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-500italic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Public Sans 600 */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-600italic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Public Sans 700 */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-700italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Public Sans 800 */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-800.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-800italic.woff2') format('woff2');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Public Sans 900 / Black */
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('fonts/public-sans/PublicSans-900italic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+/* ==========================================
+   DEFINICIÓN DE PARÁMETROS Y VARIABLES
+   ========================================== */
+
+:root {
+  /* Familias tipográficas */
+  --font-headings: 'Montserrat', system-ui, -apple-system, sans-serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, sans-serif;
+
+  /* Tamaños por defecto (Mobile First) */
+  --fs-h1: 32px;
+  --fs-h2: 28px;
+  --fs-h3: 24px;
+  --fs-h4: 20px;
+  --fs-p: 18px;
+  --fs-link: 16px;
+
+  /* Relleno / Márgenes laterales de la página */
+  --page-padding: 20px;
+}
+
+/* Media query para Escritorio (Desktop) */
+@media (min-width: 768px) {
+  :root {
+    --fs-h1: 48px;
+    --fs-h2: 40px;
+    --fs-h3: 35px;
+    --fs-h4: 28px;
+    --fs-p: 22px;
+    --fs-link: 20px;
+
+    --page-padding: 200px;
+  }
+}
+
+/* Aplicación práctica en los elementos estándar */
+h1 {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h4);
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--fs-p);
+}
+
+a {
+  font-family: var(--font-body);
+  font-size: var(--fs-link);
+}
+
+/* Estilo general del cuerpo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+/* Contenedor del contenido principal */
+.main-content {
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+/* ==========================================
+   BARRA SUPERIOR (HEADER 0221.com.ar)
+   ========================================== */
+
+.site-header {
+  background-color: #009fe3;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.sub-header {
+  background-color: #009fe3;
+  width: 100%;
+}
+
+.header-top,
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+}
+
+/* Fila Superior */
+.header-top {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.25);
+}
+
+.header-top-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-top-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-top-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Botón Secciones */
+.sections-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-family: var(--font-headings);
+  font-size: var(--fs-link);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sections-btn img {
+  height: 14px;
+  width: auto;
+}
+
+/* Logo */
+.logo-link {
+  display: inline-flex;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+}
+
+/* Botón Iniciar Sesión */
+.btn-login {
+  color: white;
+  border: 1.5px solid white;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-family: var(--font-headings);
+  font-size: var(--fs-link);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-login:hover {
+  background-color: white;
+  color: #009fe3;
+}
+
+/* Botón Registrarse */
+.btn-register {
+  background-color: #ffd800;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 20px;
+  font-family: var(--font-headings);
+  font-size: var(--fs-link);
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.btn-register:hover {
+  opacity: 0.9;
+}
+
+/* Fila Inferior */
+.header-bottom {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Buscador */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar img {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.search-bar input {
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px 8px 36px;
+  font-family: var(--font-body);
+  font-size: var(--fs-link);
+  width: 280px;
+  color: #333;
+  outline: none;
+  transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+.search-bar input::placeholder {
+  color: #777;
+}
+
+.search-bar input:focus {
+  background-color: white;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Redes Sociales */
+.social-nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+.social-link img {
+  height: 20px;
+  width: auto;
+}
+
+/* Adaptación responsiva para pantallas pequeñas (Mobile) */
+@media (max-width: 767px) {
+  .sections-btn span {
+    display: none;
+    /* Oculta el texto "Secciones", muestra solo el ícono en móviles */
+  }
+
+  .logo-img {
+    height: 38px;
+  }
+
+  .header-top-right {
+    gap: 8px;
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  .btn-register {
+    padding: 7px 12px;
+  }
+
+  .header-bottom {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .search-bar input {
+    width: 100%;
+  }
+
+  .social-nav {
+    justify-content: center;
+    padding-top: 4px;
+  }
+}
+
+/* ==========================================
+   SECCIÓN DE NOTICIAS DE LA PORTADA
+   ========================================== */
+
+/* Contenedor Grid Principal */
+.news-section {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Tarjeta Destacada Grande (Hero) */
+.hero-card {
+  grid-column: 1 / 3;
+  position: relative;
+  background-image: url('images/ImagenPrimeraSeccion.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  transition: background-image 0.5s ease-in-out;
+}
+
+/* Contenedor de Badges (Top-Left) */
+.badge-container {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.badge-zone {
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-style: italic;
+  font-size: var(--fs-link);
+  padding: 6px 28px 6px 16px;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+  z-index: 3;
+}
+
+.badge-location {
+  background-color: white;
+  color: #009fe3;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-style: italic;
+  font-size: var(--fs-link);
+  padding: 6px 25px 6px 25px;
+  margin-left: -18px;
+  clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+  z-index: 2;
+}
+
+/* Contenedor del Título */
+.hero-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: auto;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.hero-title-badge {
+  background-color: white;
+  color: #009fe3;
+  font-family: var(--font-headings);
+  font-size: var(--fs-h1);
+  font-weight: 900;
+  margin: 0;
+  padding: 6px 12px;
+  display: inline;
+  letter-spacing: -0.01em;
+  border-radius: 2px;
+  line-height: 1.6;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Puntos de Navegación del Slider */
+.slider-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 5;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.15);
+}
+
+.dot.active {
+  background-color: #009fe3;
+}
+
+/* Columna Izquierda (Noticia Destacada) */
+.grid-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.destacada-card {
+  position: relative;
+  background-image: url('images/ImagenPrimeraSeccion2.png');
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.badge-destacada {
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-style: italic;
+  font-size: var(--fs-link);
+  padding: 6px 28px 6px 16px;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+  position: absolute;
+  top: 15px;
+  left: 0;
+  z-index: 10;
+}
+
+.destacada-title-container {
+  margin-top: auto;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.destacada-title-badge {
+  background-color: white;
+  color: black;
+  font-family: var(--font-headings);
+  font-size: var(--fs-h1);
+  padding: 6px 12px;
+  display: inline;
+  border-radius: 2px;
+  line-height: 1.6;
+  margin: 0;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.title-highlight {
+  color: #009fe3;
+  font-weight: 900;
+  /* Montserrat Black */
+  margin-right: 4px;
+}
+
+.title-subtext {
+  font-weight: 600;
+  /* Montserrat SemiBold */
+  color: black;
+}
+
+.destacada-caption {
+  font-family: var(--font-body);
+  font-size: var(--fs-p);
+  font-weight: 400;
+  color: #1e293b;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+/* Columna Derecha (Clima) */
+.grid-right {
+  display: flex;
+}
+
+.weather-widget {
+  --weather-label-fs: 38px;
+  --weather-date-fs: 18px;
+  --weather-temp-fs: 110px;
+  --weather-loc-fs: 26px;
+  --weather-feel-fs: 13px;
+  --weather-cloud-w: 76px;
+
+  background: linear-gradient(135deg, #009fe3 0%, #46c3f7 100%);
+  border-radius: 8px;
+  padding: 24px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: 100%;
+}
+
+.weather-info-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.weather-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.weather-cloud-icon {
+  width: var(--weather-cloud-w);
+  height: auto;
+  fill: white;
+}
+
+.weather-label {
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-size: var(--weather-label-fs);
+  letter-spacing: -0.01em;
+  margin: 0;
+  line-height: 1;
+}
+
+.weather-date {
+  font-family: var(--font-body);
+  font-size: var(--weather-date-fs);
+  opacity: 0.95;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.weather-temp {
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-size: var(--weather-temp-fs);
+  line-height: 0.95;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.weather-location {
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-size: var(--weather-loc-fs);
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+.weather-feel {
+  font-family: var(--font-body);
+  font-size: var(--weather-feel-fs);
+  font-weight: 700;
+  opacity: 0.85;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.weather-info-mobile {
+  display: none;
+}
+
+/* ==========================================
+   SECCIÓN MÁS LEÍDAS
+   ========================================== */
+
+.mas-leidas-section {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.mas-leidas-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid #e2e8f0;
+  margin-bottom: 25px;
+}
+
+.mas-leidas-title {
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-size: var(--fs-link);
+  font-weight: 900;
+  font-style: italic;
+  margin: 0;
+  padding: 8px 32px 8px 16px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  margin-bottom: -4px;
+  /* Solapa con la línea gris inferior */
+  text-transform: uppercase;
+}
+
+.mas-leidas-carousel,
+.vecinos-carousel,
+.deportes-carousel,
+.policiales-carousel,
+.recientes-carousel,
+.gonnet-carousel,
+.citybell-carousel,
+.saavedra-carousel,
+.ringuelet-carousel,
+.tolosa-carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.mas-leidas-card,
+.vecinos-card,
+.deportes-card,
+.policiales-card,
+.recientes-card,
+.gonnet-card,
+.citybell-card,
+.saavedra-card,
+.ringuelet-card,
+.tolosa-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-container {
+  background-color: #009fe3;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 36px;
+  transition: transform 0.3s ease;
+}
+
+.mas-leidas-card:hover .card-image-container img,
+.vecinos-card:hover .card-image-container img,
+.deportes-card:hover .card-image-container img,
+.policiales-card:hover .card-image-container img,
+.recientes-grande-card:hover .card-image-container img,
+.recientes-card:hover .card-image-container img,
+.cronicas-card:hover .card-image-container img,
+.gonnet-card:hover .card-image-container img,
+.citybell-card:hover .card-image-container img,
+.saavedra-card:hover .card-image-container img,
+.ringuelet-card:hover .card-image-container img,
+.tolosa-card:hover .card-image-container img {
+  transform: scale(1.03);
+}
+
+.card-title {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h4);
+  line-height: 1.35;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.title-highlight {
+  color: #009fe3;
+  font-weight: 900;
+}
+
+.title-text {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+/* ==========================================
+   SECCIÓN LOS VECINOS REPORTAN
+   ========================================== */
+
+.vecinos-section {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.vecinos-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid #cbd5e1;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.vecinos-title-badge {
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-style: italic;
+  font-size: var(--fs-link);
+  padding: 8px 32px 8px 20px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  margin-bottom: -4px;
+  z-index: 3;
+}
+
+.vecinos-link-badge {
+  background-color: #ffffff;
+  color: #009fe3;
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-style: italic;
+  font-size: var(--fs-link);
+  padding: 8px 32px 8px 32px;
+  margin-left: -18px;
+  clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+  text-decoration: underline;
+  margin-bottom: -4px;
+  z-index: 2;
+  transition: opacity 0.2s ease;
+}
+
+.vecinos-link-badge:hover {
+  opacity: 0.85;
+}
+
+.vecinos-text-badge {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+  font-family: var(--font-headings);
+  font-weight: 700;
+  font-style: italic;
+  font-size: var(--fs-link);
+  padding: 8px 32px 8px 32px;
+  margin-left: -18px;
+  clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+  margin-bottom: -4px;
+  z-index: 1;
+}
+
+/* ==========================================
+   SECCIONES DEPORTES Y POLICIALES
+   ========================================== */
+
+.deportes-section,
+.policiales-section,
+.cronicas-section,
+.streaming-section,
+.gonnet-section,
+.citybell-section,
+.saavedra-section,
+.ringuelet-section,
+.tolosa-section,
+.secciones-section {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.deportes-header,
+.policiales-header,
+.cronicas-header,
+.streaming-header,
+.gonnet-header,
+.citybell-header,
+.saavedra-header,
+.ringuelet-header,
+.tolosa-header,
+.secciones-header {
+  background: linear-gradient(to right, #009fe3 0%, #46c3f7 70%, #ffffff 100%);
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  height: 52px;
+  margin-bottom: 25px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.deportes-title-text,
+.policiales-title-text,
+.cronicas-title-text,
+.streaming-title-text,
+.gonnet-title-text,
+.citybell-title-text,
+.saavedra-title-text,
+.ringuelet-title-text,
+.tolosa-title-text,
+.secciones-title-text {
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.deportes-separator,
+.policiales-separator,
+.cronicas-separator,
+.streaming-separator,
+.gonnet-separator,
+.citybell-separator,
+.saavedra-separator,
+.ringuelet-separator,
+.tolosa-separator,
+.secciones-separator {
+  width: 2.5px;
+  height: 32px;
+  background-color: white;
+  transform: rotate(25deg);
+  display: inline-block;
+}
+
+.deportes-logo,
+.policiales-logo,
+.cronicas-logo,
+.streaming-logo,
+.gonnet-logo,
+.citybell-logo,
+.saavedra-logo,
+.ringuelet-logo,
+.tolosa-logo,
+.secciones-logo {
+  height: 28px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  display: block;
+}
+
+.deportes-hero,
+.policiales-hero,
+.streaming-hero,
+.gonnet-hero,
+.citybell-hero,
+.saavedra-hero,
+.ringuelet-hero,
+.tolosa-hero {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 30px;
+  margin-bottom: 35px;
+  align-items: center;
+}
+
+.deportes-hero-image-container,
+.policiales-hero-image-container,
+.streaming-hero-image-container,
+.gonnet-hero-image-container,
+.citybell-hero-image-container,
+.saavedra-hero-image-container,
+.ringuelet-hero-image-container,
+.tolosa-hero-image-container {
+  background-color: #009fe3;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16 / 10;
+}
+
+.deportes-hero-image-container img,
+.policiales-hero-image-container img,
+.streaming-hero-image-container img,
+.gonnet-hero-image-container img,
+.citybell-hero-image-container img,
+.saavedra-hero-image-container img,
+.ringuelet-hero-image-container img,
+.tolosa-hero-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 36px;
+}
+
+.deportes-hero-info,
+.policiales-hero-info,
+.streaming-hero-info,
+.gonnet-hero-info,
+.citybell-hero-info,
+.saavedra-hero-info,
+.ringuelet-hero-info,
+.tolosa-hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.deportes-hero-badge-container,
+.policiales-hero-badge-container,
+.gonnet-hero-badge-container,
+.citybell-hero-badge-container,
+.saavedra-hero-badge-container,
+.ringuelet-hero-badge-container,
+.tolosa-hero-badge-container {
+  margin-bottom: 15px;
+}
+
+.deportes-hero-badge,
+.policiales-hero-badge,
+.gonnet-hero-badge,
+.citybell-hero-badge,
+.saavedra-hero-badge,
+.ringuelet-hero-badge,
+.tolosa-hero-badge {
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-size: var(--fs-h3);
+  padding: 6px 16px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.deportes-hero-title,
+.policiales-hero-title,
+.gonnet-hero-title,
+.citybell-hero-title,
+.saavedra-hero-title,
+.ringuelet-hero-title,
+.tolosa-hero-title {
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-size: var(--fs-h2);
+  line-height: 1.25;
+  margin: 0;
+  color: #1e293b;
+}
+
+.streaming-hero-title {
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-size: var(--fs-h2);
+  line-height: 1.25;
+  margin: 0;
+  color: #009fe3; /* Blue text to match the mockup */
+}
+
+.streaming-hero-description {
+  font-family: var(--font-body);
+  font-size: var(--fs-p);
+  color: #1e293b;
+  margin-top: 16px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+/* ==========================================
+   SECCIÓN NOTICIAS RECIENTES
+   ========================================== */
+
+.recientes-section {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.recientes-destacadas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.recientes-grande-card {
+  display: flex;
+  flex-direction: column;
+}
+
+h1.card-title {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h1);
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* ==========================================
+   SECCIÓN CRÓNICAS PLATENSES
+   ========================================== */
+
+.cronicas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.cronicas-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-badge-highlight {
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  padding: 4px 8px;
+  border-radius: 2px;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  line-height: 1.6;
+  margin-right: 6px;
+}
+
+/* Línea divisora entre secciones */
+.section-divider {
+  border: none;
+  height: 1.5px;
+  background-color: #cbd5e1; /* Gris claro suave */
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+/* ==========================================
+   PIE DE PÁGINA (FOOTER)
+   ========================================== */
+
+.site-footer {
+  background: linear-gradient(135deg, #009fe3 0%, #006097 100%);
+  color: white;
+  margin-top: 60px; /* Espacio con la sección Streaming */
+  font-family: var(--font-body);
+  width: 100%;
+}
+
+.footer-main-content {
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+/* Columna 1: Logo */
+.footer-col-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: 1.5px solid rgba(255, 255, 255, 0.25);
+  padding-right: 40px;
+  height: 120px; /* Altura para centrar verticalmente con divisor */
+  flex: 0 0 25%;
+}
+
+.footer-logo {
+  height: 60px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Columna 2: Enlaces */
+.footer-col-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-right: 1.5px solid rgba(255, 255, 255, 0.25);
+  padding-right: 40px;
+  height: 120px;
+  justify-content: center;
+  flex: 0 0 25%;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-family: var(--font-headings);
+  font-weight: 500;
+  font-size: var(--fs-link);
+  transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.8;
+}
+
+/* Columna 3: Información, Contacto y Redes */
+.footer-col-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer-info-text {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+.footer-social-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.footer-social-label {
+  font-family: var(--font-headings);
+  font-weight: 600;
+  font-size: var(--fs-link);
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.footer-social-link {
+  display: inline-flex;
+  transition: opacity 0.2s ease;
+}
+
+.footer-social-link:hover {
+  opacity: 0.85;
+}
+
+.footer-social-link img {
+  height: 22px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+/* Línea divisora base */
+.footer-divider-container {
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+}
+
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 0;
+}
+
+/* Fila de registro DNDA */
+.footer-register-line {
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  padding-top: 18px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.footer-register-line p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 12px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Franja blanca de copyright final */
+.footer-copyright-strip {
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.footer-copyright-strip p {
+  margin: 0;
+  color: #009fe3;
+  font-family: var(--font-headings);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Adaptación para pantallas pequeñas (Mobile) */
+@media (max-width: 767px) {
+  .news-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-card {
+    order: 1;
+    height: 480px;
+    /* Cropping vertical para móvil */
+  }
+
+  .grid-right {
+    order: 2;
+    /* El Clima va al medio en celulares */
+    width: 100%;
+  }
+
+  .grid-left {
+    order: 3;
+    /* Destacada va abajo */
+    width: 100%;
+  }
+
+  .destacada-card {
+    height: 380px;
+    /* Cropping vertical para móvil */
+  }
+
+  .hero-title-badge {
+    padding: 4px 8px;
+    line-height: 1.8;
+  }
+
+  .destacada-title-badge {
+    padding: 4px 8px;
+    line-height: 1.8;
+  }
+
+  .slider-dots {
+    display: none;
+  }
+
+  /* Clima en formato horizontal para móvil */
+  .weather-widget {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    height: auto;
+    text-align: left;
+  }
+
+  .weather-cloud-icon-mobile {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 0;
+    fill: white;
+  }
+
+  .weather-info-desktop {
+    display: none;
+  }
+
+  .weather-info-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .weather-mobile-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-left: 20px;
+  }
+
+  .weather-group-temp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .weather-lbl {
+    font-family: var(--font-body);
+    font-size: var(--fs-link);
+    font-weight: 600;
+    opacity: 0.9;
+  }
+
+  .weather-val {
+    font-family: var(--font-headings);
+    font-weight: 900;
+    font-size: var(--fs-h1);
+    line-height: 1.1;
+  }
+
+  .weather-group-loc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .weather-loc {
+    font-family: var(--font-headings);
+    font-weight: 900;
+    font-size: var(--fs-h2);
+    margin-bottom: 2px;
+  }
+
+  .weather-date-mob {
+    font-family: var(--font-body);
+    font-size: var(--fs-link);
+    opacity: 0.9;
+  }
+
+  /* Estilos para Más Leídas, Los Vecinos Reportan, Deportes, Policiales, Crónicas Platenses y Streaming en Móvil (Carrusel) */
+  .mas-leidas-section,
+  .vecinos-section,
+  .deportes-section,
+  .policiales-section,
+  .cronicas-section,
+  .streaming-section,
+  .gonnet-section,
+  .citybell-section,
+  .saavedra-section,
+  .ringuelet-section,
+  .tolosa-section {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .mas-leidas-carousel,
+  .vecinos-carousel,
+  .deportes-carousel,
+  .policiales-carousel,
+  .recientes-carousel,
+  .gonnet-carousel,
+  .citybell-carousel,
+  .saavedra-carousel,
+  .ringuelet-carousel,
+  .tolosa-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--page-padding);
+    gap: 16px;
+    margin-left: calc(-1 * var(--page-padding));
+    margin-right: calc(-1 * var(--page-padding));
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+    padding-bottom: 15px;
+    /* Margen para scrollbars o sombras */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .mas-leidas-carousel::-webkit-scrollbar,
+  .vecinos-carousel::-webkit-scrollbar,
+  .deportes-carousel::-webkit-scrollbar,
+  .policiales-carousel::-webkit-scrollbar,
+  .recientes-carousel::-webkit-scrollbar,
+  .gonnet-carousel::-webkit-scrollbar,
+  .citybell-carousel::-webkit-scrollbar,
+  .saavedra-carousel::-webkit-scrollbar,
+  .ringuelet-carousel::-webkit-scrollbar,
+  .tolosa-carousel::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+  }
+
+  .mas-leidas-card,
+  .vecinos-card,
+  .deportes-card,
+  .policiales-card,
+  .recientes-card,
+  .gonnet-card,
+  .citybell-card,
+  .saavedra-card,
+  .ringuelet-card,
+  .tolosa-card {
+    flex: 0 0 calc(43% - 8px);
+    /* Muestra 2 tarjetas completas y asoma la 3ra */
+    scroll-snap-align: start;
+  }
+
+  .card-title {
+    margin-top: 10px;
+  }
+
+  /* Cabecera Móvil - Los Vecinos Reportan */
+  .vecinos-text-badge {
+    display: none; /* Oculta "Tu opinión importa" en móviles */
+  }
+
+  .vecinos-title-badge {
+    padding: 6px 20px 6px 12px;
+    font-size: 14px;
+  }
+
+  .vecinos-link-badge {
+    padding: 6px 20px 6px 20px;
+    font-size: 14px;
+    margin-left: -12px;
+  }
+
+  /* Cabecera y Hero Móvil - Deportes, Policiales, Crónicas Platenses y Streaming */
+  .deportes-header,
+  .policiales-header,
+  .cronicas-header,
+  .streaming-header,
+  .gonnet-header,
+  .citybell-header,
+  .saavedra-header,
+  .ringuelet-header,
+  .tolosa-header,
+  .secciones-header {
+    padding: 8px 16px;
+    height: 44px;
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .deportes-title-text,
+  .policiales-title-text,
+  .cronicas-title-text,
+  .streaming-title-text,
+  .gonnet-title-text,
+  .citybell-title-text,
+  .saavedra-title-text,
+  .ringuelet-title-text,
+  .tolosa-title-text,
+  .secciones-title-text {
+    font-size: 24px;
+  }
+
+  .deportes-separator,
+  .policiales-separator,
+  .cronicas-separator,
+  .streaming-separator,
+  .gonnet-separator,
+  .citybell-separator,
+  .saavedra-separator,
+  .ringuelet-separator,
+  .tolosa-separator,
+  .secciones-separator {
+    height: 24px;
+    width: 2px;
+  }
+
+  .deportes-logo,
+  .policiales-logo,
+  .cronicas-logo,
+  .streaming-logo,
+  .gonnet-logo,
+  .citybell-logo,
+  .saavedra-logo,
+  .ringuelet-logo,
+  .tolosa-logo,
+  .secciones-logo {
+    height: 20px;
+  }
+
+  .deportes-hero,
+  .policiales-hero,
+  .streaming-hero,
+  .gonnet-hero,
+  .citybell-hero,
+  .saavedra-hero,
+  .ringuelet-hero,
+  .tolosa-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .deportes-hero-title,
+  .policiales-hero-title,
+  .streaming-hero-title,
+  .gonnet-hero-title,
+  .citybell-hero-title,
+  .saavedra-hero-title,
+  .ringuelet-hero-title,
+  .tolosa-hero-title {
+    font-size: var(--fs-h3);
+    line-height: 1.3;
+  }
+
+  .deportes-hero-badge,
+  .policiales-hero-badge,
+  .gonnet-hero-badge,
+  .citybell-hero-badge,
+  .saavedra-hero-badge,
+  .ringuelet-hero-badge,
+  .tolosa-hero-badge {
+    font-size: var(--fs-h4);
+    padding: 4px 12px;
+  }
+
+  /* Noticias Recientes Móvil */
+  .recientes-destacadas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+
+  .section-divider {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  /* Crónicas Platenses Móvil */
+  .cronicas-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--page-padding);
+    gap: 16px;
+    margin-left: calc(-1 * var(--page-padding));
+    margin-right: calc(-1 * var(--page-padding));
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+    padding-bottom: 15px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .cronicas-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .cronicas-card {
+    flex: 0 0 calc(80% - 8px); /* Tarjeta grande para que asome la siguiente (80% ancho) */
+    scroll-snap-align: start;
+  }
+
+  /* Pie de página (Footer) Móvil */
+  .site-footer {
+    margin-top: 40px;
+  }
+
+  .footer-main-content {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-col-logo,
+  .footer-col-links {
+    border-right: none;
+    padding-right: 0;
+    height: auto;
+    flex: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-col-logo {
+    margin-bottom: 10px;
+  }
+
+  .footer-logo {
+    height: 52px;
+  }
+
+  .footer-col-links {
+    gap: 12px;
+  }
+
+  .footer-col-info {
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-social-section {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .footer-register-line {
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+
+  .footer-register-line p {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .footer-copyright-strip {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .footer-copyright-strip p {
+    font-size: 13px;
+  }
+
+  /* Limitar títulos en móvil a un máximo de 3 líneas */
+  .card-title,
+  .deportes-hero-title,
+  .policiales-hero-title,
+  .streaming-hero-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* ==========================================
+   MENÚ LATERAL DE SECCIONES (SIDEBAR)
+   ========================================== */
+
+/* Superposición del menú */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Cuerpo del Menú */
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Anchos según dispositivo (Móvil Primero) */
+@media (max-width: 767px) {
+  .sidebar-menu {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-menu {
+    width: 30vw;
+    max-width: 400px;
+  }
+}
+
+.sidebar-menu.open {
+  left: 0;
+}
+
+/* Encabezado */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 20px 18px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-logo {
+  height: 48px;
+  width: auto;
+  filter: invert(48%) sepia(79%) saturate(2477%) hue-rotate(170deg) brightness(99%) contrast(102%);
+}
+
+.sidebar-close-btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  line-height: 1;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.sidebar-close-btn:hover {
+  color: #475569;
+}
+
+/* Buscador en Sidebar */
+.sidebar-search {
+  padding: 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-search-bar img {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+  filter: invert(48%) sepia(79%) saturate(2477%) hue-rotate(170deg) brightness(99%) contrast(102%);
+}
+
+.sidebar-search-bar input {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 10px 12px 10px 38px;
+  font-family: var(--font-body);
+  font-size: var(--fs-link);
+  width: 100%;
+  color: #333;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.sidebar-search-bar input:focus {
+  border-color: #009fe3;
+  box-shadow: 0 0 0 2px rgba(0, 159, 227, 0.15);
+}
+
+/* Lista de Navegación */
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.sidebar-list a {
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: #1e293b;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-list a:hover {
+  background-color: #f1f5f9;
+  color: #009fe3;
+  padding-left: 24px;
+}
+
+/* Redes Sociales en Sidebar */
+.sidebar-social {
+  padding: 24px 20px;
+  border-top: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.sidebar-social-title {
+  display: block;
+  font-family: var(--font-headings);
+  font-weight: 600;
+  font-size: var(--fs-link);
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.sidebar-social-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.sidebar-social-link {
+  display: inline-flex;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.sidebar-social-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.sidebar-social-link img {
+  height: 24px;
+  width: auto;
+  filter: invert(48%) sepia(79%) saturate(2477%) hue-rotate(170deg) brightness(99%) contrast(102%);
+}
+
+/* Bloqueo de Scroll */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* ==========================================
+   SECCIÓN LA PLATA (laplata.html)
+   ========================================== */
+
+.laplata-container {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.laplata-main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Portada (Hero) de La Plata */
+.laplata-hero {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.laplata-hero-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.laplata-hero-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 36px; /* Para mantener la coherencia visual con la home */
+}
+
+/* Badges sobre la portada */
+.laplata-badge-zone {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-style: italic;
+  font-size: var(--fs-link);
+  padding: 6px 28px 6px 16px;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+  z-index: 3;
+}
+
+.laplata-badge-theme {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: white;
+  color: #009fe3;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-size: var(--fs-h2);
+  padding: 6px 16px;
+  border-radius: 2px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.laplata-hero-title {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h1);
+  font-weight: 800;
+  line-height: 1.25;
+  color: #1e293b;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* Grilla La Plata (2x2) */
+.laplata-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.laplata-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.laplata-card:hover .card-image-container img {
+  transform: scale(1.03);
+}
+
+/* Columna de Noticias Destacadas */
+.laplata-sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.destacadas-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.destacadas-icon {
+  width: 18px;
+  height: 18px;
+  filter: invert(48%) sepia(79%) saturate(2477%) hue-rotate(170deg) brightness(99%) contrast(102%);
+}
+
+.destacadas-title {
+  font-family: var(--font-headings);
+  font-size: 18px;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* Panel Scrollable */
+.destacadas-scroll {
+  max-height: 650px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+  padding-right: 6px;
+}
+
+/* Scrollbar personalizado en WebKit (Chrome, Safari) */
+.destacadas-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.destacadas-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.destacadas-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.destacadas-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Cada Item Destacado en el feed */
+.destacada-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f1f5f9;
+  align-items: flex-start;
+  transition: background-color 0.2s ease;
+}
+
+.destacada-item:hover {
+  background-color: #f8fafc;
+}
+
+.destacada-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.destacada-item-img {
+  flex: 0 0 80px;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #e2e8f0;
+}
+
+.destacada-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.destacada-item-title {
+  margin: 0;
+  font-family: var(--font-headings);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Adaptación para móviles de la sección La Plata */
+@media (max-width: 767px) {
+  .laplata-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .laplata-hero-image-container img {
+    border-top-left-radius: 20px;
+  }
+
+  .laplata-hero-title {
+    font-size: var(--fs-h2);
+    margin-top: 15px;
+  }
+
+  .laplata-badge-theme {
+    font-size: var(--fs-h3);
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .laplata-badge-zone {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 20px; /* Coincide con la esquina redondeada de la imagen en móvil */
+  }
+
+  .laplata-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: var(--page-padding);
+    gap: 16px;
+    margin-left: calc(-1 * var(--page-padding));
+    margin-right: calc(-1 * var(--page-padding));
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+    padding-bottom: 15px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    margin-top: 20px;
+  }
+
+  .laplata-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  .laplata-card {
+    flex: 0 0 calc(43% - 8px);
+    scroll-snap-align: start;
+  }
+
+  .laplata-sidebar {
+    padding: 15px;
+  }
+
+  .destacadas-scroll {
+    max-height: 480px;
+  }
+}
+
+/* ==========================================
+   SECCIÓN SECCIONES (CAROUSEL)
+   ========================================== */
+.secciones-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden; /* Evita cualquier scrollbar vertical */
+  gap: 24px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 15px;
+  position: relative;
+  z-index: 5;
+}
+.secciones-carousel::-webkit-scrollbar {
+  display: none;
+}
+.seccion-card {
+  flex: 0 0 720px;
+  width: 720px;
+  max-width: 720px;
+  min-width: 720px;
+  height: 540px; /* Altura uniforme para todas las tarjetas */
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden; /* Recorta la imagen y el título limpiamente */
+  background-color: transparent;
+  box-shadow: none; /* Aspecto plano */
+}
+.seccion-card-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+.seccion-image-container {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+.seccion-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 36px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.seccion-card:hover .seccion-image-container img {
+  transform: scale(1.03);
+}
+.seccion-title-block {
+  background-color: #009fe3;
+  padding: 20px 15px;
+  text-align: center;
+  flex-grow: 1; /* Estira el bloque para ocupar el resto de la altura uniforme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.seccion-card-title {
+  color: white;
+  font-family: var(--font-headings);
+  font-size: 90px;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .secciones-carousel {
+    gap: 16px;
+    margin-left: calc(-1 * var(--page-padding));
+    margin-right: calc(-1 * var(--page-padding));
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .seccion-card {
+    flex: 0 0 280px;
+    width: 280px;
+    max-width: 280px;
+    min-width: 280px;
+    height: 220px; /* Altura uniforme para todas las tarjetas en mobile */
+    background-color: transparent;
+    border-radius: 6px;
+  }
+  .seccion-image-container img {
+    border-top-left-radius: 20px;
+  }
+  .seccion-title-block {
+    padding: 10px 8px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .seccion-card-title {
+    font-size: 40px;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* ==========================================
+   CURSOR Y SELECCIÓN PARA CARRUSELES ARRASTRABLES
+   ========================================== */
+[class*="-carousel"] {
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+[class*="-carousel"]:active {
+  cursor: grabbing;
+}
