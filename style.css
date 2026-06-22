@@ -1986,6 +1986,7 @@ body {
   .streaming-hero-title {
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -3722,6 +3723,8 @@ body.no-scroll {
   color: #009fe3;
   text-decoration: none;
   font-weight: 700;
+  font-size: inherit;
+  font-family: inherit;
   transition: opacity 0.2s ease;
 }
 
