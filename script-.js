@@ -517,4 +517,16 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.lpr-report-section').scrollIntoView({ behavior: 'smooth' });
         });
     }
+
+    // ==========================================
+    // SCROLL AL FORMULARIO DE CATEGORÍAS (LPR)
+    // ==========================================
+    const heroRegisterBtn = document.querySelector('.lpr-button');
+    const categorySection = document.querySelector('.lpr-category-section');
+
+    if (heroRegisterBtn && categorySection) {
+        heroRegisterBtn.addEventListener('click', () => {
+            categorySection.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
 });
