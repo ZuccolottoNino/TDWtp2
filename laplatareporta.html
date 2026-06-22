@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Plata Reporta - 0221.com.ar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS y JS para el mapa interactivo -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script-.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Superposición del menú lateral -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Menú lateral izquierdo (Sidebar) -->
+    <aside class="sidebar-menu" id="sidebarMenu">
+        <!-- Encabezado con Logo y Botón de Cierre -->
+        <div class="sidebar-header">
+            <img src="icons/0221.svg" alt="0221.com.ar" class="sidebar-logo">
+            <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Cerrar menú">&times;</button>
+        </div>
+
+        <!-- Buscador -->
+        <div class="sidebar-search">
+            <div class="sidebar-search-bar">
+                <img src="icons/Lupa.svg" alt="Buscar">
+                <input type="text" placeholder="Buscar">
+            </div>
+        </div>
+
+        <!-- Lista de Secciones -->
+        <nav class="sidebar-nav">
+            <ul class="sidebar-list">
+                <li><a href="laplata.html">La Plata</a></li>
+                <li><a href="index.html#policiales">Policiales</a></li>
+                <li><a href="#">Universidad</a></li>
+                <li><a href="#">Provincia</a></li>
+                <li><a href="#">Nacional</a></li>
+                <li><a href="#">Berisso</a></li>
+                <li><a href="#">Ensenada</a></li>
+                <li><a href="index.html#deportes">Deportes</a></li>
+                <li><a href="#">Transporte</a></li>
+                <li><a href="#">¿Qué hago el finde?</a></li>
+                <li><a href="index.html#cronicas">Crónicas Platenses</a></li>
+                <li><a href="#">Entretenimiento</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="laplatareporta.html">La Plata Reporta</a></li>
+                <li><a href="#">Propuestas Laborales</a></li>
+            </ul>
+        </nav>
+
+        <!-- Redes Sociales -->
+        <div class="sidebar-social">
+            <span class="sidebar-social-title">Redes Sociales:</span>
+            <div class="sidebar-social-icons">
+                <a href="#" class="sidebar-social-link"><img src="icons/Instagram.svg" alt="Instagram"></a>
+                <a href="#" class="sidebar-social-link"><img src="icons/Twitter.svg" alt="Twitter"></a>
+                <a href="#" class="sidebar-social-link"><img src="icons/YouTube.svg" alt="YouTube"></a>
+                <a href="#" class="sidebar-social-link"><img src="icons/FaceBook.svg" alt="Facebook"></a>
+                <a href="#" class="sidebar-social-link"><img src="icons/Linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </aside>
+
+    <header class="site-header">
+
+        <!-- Fila Superior -->
+        <div class="header-top">
+            <div class="header-top-left">
+                <button class="sections-btn">
+                    <span>Secciones</span>
+                    <img src="icons/Secciones.svg" alt="Secciones">
+                </button>
+            </div>
+            <div class="header-top-center">
+                <a href="index.html" class="logo-link">
+                    <img src="icons/0221.svg" alt="0221.com.ar" class="logo-img">
+                </a>
+            </div>
+            <div class="header-top-right">
+                <a href="#" class="btn-login">Iniciar Sesión</a>
+                <a href="#" class="btn-register">Registrarse</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Barra Inferior de Navegación (no sticky) -->
+    <div class="sub-header">
+
+        <!-- Fila Inferior -->
+        <div class="header-bottom">
+            <div class="search-bar">
+                <img src="icons/Lupa.svg" alt="Buscar">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <nav class="social-nav">
+                <a href="#" class="social-link">
+                    <img src="icons/Instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/FaceBook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/Twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/YouTube.svg" alt="YouTube">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/Linkedin.svg" alt="LinkedIn">
+                </a>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- Contenedor del Contenido Principal -->
+    <main class="lpr-main">
+
+        <!-- Sección La Plata Reporta -->
+        <section class="lpr-section">
+            <div class="lpr-hero">
+                <div class="lpr-hero-content">
+                    <h1 class="lpr-title">La Plata<br>Reporta</h1>
+                    <h3 class="lpr-subtitle">Plataforma ciudadana de reporte y monitoreo del estado urbano en La Plata,
+                        barrio por barrio.</h3>
+                    <button class="lpr-button">Registrar un Reporte</button>
+                </div>
+            </div>
+
+            <!-- Contenido Informativo LPR -->
+            <div class="lpr-info-container">
+
+                <!-- Bloque 1: Acerca del proyecto -->
+                <div class="lpr-info-block">
+                    <h2 class="lpr-info-title">Acerca del proyecto</h2>
+                    <p class="lpr-info-text">Somos vecinos de La Plata que buscan visibilizar el estado de la
+                        infraestructura y los servicios públicos del municipio. Las calles deterioradas, los residuos
+                        acumulados, las deficiencias en el alumbrado y los graves problemas de seguridad afectan la
+                        calidad de vida en todos los barrios.</p>
+                    <p class="lpr-info-text">Esta plataforma centraliza esa información de forma estructurada, pública y
+                        accesible.</p>
+                </div>
+
+                <!-- Bloque 2: Propósito -->
+                <div class="lpr-info-block">
+                    <h2 class="lpr-info-title">Propósito</h2>
+                    <p class="lpr-info-text">Muchos problemas urbanos quedan dispersos, sin registro formal y sin
+                        seguimiento. <strong>Ordenar esa información, hacerla pública y representarla geográficamente
+                            permite comprender el estado real de cada barrio y generar datos concretos para la
+                            acción.</strong></p>
+                </div>
+
+                <!-- Bloque 3: Destino de los datos -->
+                <div class="lpr-info-block">
+                    <h2 class="lpr-info-title">Destino de los datos</h2>
+                    <p class="lpr-info-text">Con la información recolectada se elaboran informes quincenales que agrupan
+                        los reportes ciudadanos por zona y categoría. Estos informes se presentan ante la
+                        <strong>Municipalidad y el Concejo Deliberante</strong> con los siguientes objetivos:</p>
+
+                    <ul class="lpr-info-list">
+                        <li>
+                            <img src="icons/flecha.svg" alt="->" class="lpr-list-icon">
+                            <span class="lpr-list-text">Visibilizar los problemas</span>
+                        </li>
+                        <li>
+                            <img src="icons/flecha.svg" alt="->" class="lpr-list-icon">
+                            <span class="lpr-list-text">Generar seguimiento</span>
+                        </li>
+                        <li>
+                            <img src="icons/flecha.svg" alt="->" class="lpr-list-icon">
+                            <span class="lpr-list-text">Impulsar soluciones</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección Reportar un problema -->
+        <section class="lpr-report-section">
+            <!-- Encabezado de Sección (Estilo Deportes de la Home) -->
+            <div class="lpr-report-header">
+                <span class="lpr-report-title-text">Reportar un problema</span>
+                <span class="lpr-report-separator"></span>
+                <img src="icons/0221.svg" alt="0221.com.ar" class="lpr-report-logo">
+            </div>
+
+            <!-- Formulario de Reporte -->
+            <form id="lprReportForm" class="lpr-report-form">
+                <div class="lpr-report-content" id="lprReportContent">
+                    <p class="lpr-report-description">Describí el problema, elegí la categoría y marcá la ubicación en
+                        el mapa.</p>
+
+                    <div class="lpr-category-section">
+                        <h3 class="lpr-category-label">Categoría <span class="required-asterisk">*</span></h3>
+
+                        <div class="lpr-categories-grid">
+                            <!-- Categoría 1: Luminarias -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Luminarias"
+                                    style="background-color: #fdecd2;" aria-label="Luminarias">
+                                    <img src="icons/Luminarias.svg" alt="Luminarias">
+                                </button>
+                                <span class="lpr-category-name">Luminarias</span>
+                            </div>
+
+                            <!-- Categoría 2: Residuos -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Residuos"
+                                    style="background-color: #e5d5c8;" aria-label="Residuos">
+                                    <img src="icons/Residuos.svg" alt="Residuos">
+                                </button>
+                                <span class="lpr-category-name">Residuos</span>
+                            </div>
+
+                            <!-- Categoría 3: Calles -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Calles"
+                                    style="background-color: #e3d5fc;" aria-label="Calles">
+                                    <img src="icons/Calles.svg" alt="Calles">
+                                </button>
+                                <span class="lpr-category-name">Calles</span>
+                            </div>
+
+                            <!-- Categoría 4: Inseguridad -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Inseguridad"
+                                    style="background-color: #d1d5db;" aria-label="Inseguridad">
+                                    <img src="icons/Inseguridad.svg" alt="Inseguridad">
+                                </button>
+                                <span class="lpr-category-name">Inseguridad</span>
+                            </div>
+
+                            <!-- Categoría 5: Semáforos -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Semáforos"
+                                    style="background-color: #bceefa;" aria-label="Semáforos">
+                                    <img src="icons/Transito.svg" alt="Semáforos">
+                                </button>
+                                <span class="lpr-category-name">Semáforos</span>
+                            </div>
+
+                            <!-- Categoría 6: Agua -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Agua"
+                                    style="background-color: #bce8f9;" aria-label="Agua">
+                                    <img src="icons/Agua.svg" alt="Agua">
+                                </button>
+                                <span class="lpr-category-name">Agua</span>
+                            </div>
+
+                            <!-- Categoría 7: Arbolado -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Arbolado"
+                                    style="background-color: #bdf2d5;" aria-label="Arbolado">
+                                    <img src="icons/Arbolado.svg" alt="Arbolado">
+                                </button>
+                                <span class="lpr-category-name">Arbolado</span>
+                            </div>
+
+                            <!-- Categoría 8: Transporte -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Transporte"
+                                    style="background-color: #e6d7ff;" aria-label="Transporte">
+                                    <img src="icons/Transporte.svg" alt="Transporte">
+                                </button>
+                                <span class="lpr-category-name">Transporte</span>
+                            </div>
+
+                            <!-- Categoría 9: Otros -->
+                            <div class="lpr-category-item">
+                                <button type="button" class="lpr-category-btn" data-category="Otros"
+                                    style="background-color: #e5e7eb;" aria-label="Otros">
+                                    <img src="icons/Otros.svg" alt="Otros">
+                                </button>
+                                <span class="lpr-category-name">Otros</span>
+                            </div>
+                        </div>
+
+                        <!-- Input oculto para guardar la categoría seleccionada -->
+                        <input type="hidden" name="report-category" id="lprSelectedCategory" value="">
+                    </div>
+
+                    <!-- Campos del Formulario (Descripción, Dirección, Barrio) -->
+                    <div class="lpr-form-fields">
+                        <!-- Campo 1: Descripción -->
+                        <div class="lpr-form-group">
+                            <label for="lprDescription" class="lpr-field-label">Descripción <span
+                                    class="required-asterisk">*</span></label>
+                            <textarea id="lprDescription" name="description" class="lpr-textarea"
+                                placeholder="Describí el problema con el mayor detalle posible..." maxlength="500"
+                                required></textarea>
+                            <span class="lpr-char-counter" id="lprCharCounter">0/500 caracteres</span>
+                        </div>
+
+                        <!-- Campo 2: Dirección -->
+                        <div class="lpr-form-group">
+                            <label for="lprAddress" class="lpr-field-label">Dirección <span
+                                    class="required-asterisk">*</span></label>
+                            <div class="lpr-input-wrapper">
+                                <!-- Icono Pin Ubicación SVG -->
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="lpr-input-icon">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
+                                        fill="#94A3B8" />
+                                </svg>
+                                <input type="text" id="lprAddress" name="address" class="lpr-input"
+                                    placeholder="Ej: Av. Principal y calle 1, La Plata" required>
+                            </div>
+                        </div>
+
+                        <!-- Campo 3: Barrio -->
+                        <div class="lpr-form-group">
+                            <label for="lprNeighborhood" class="lpr-field-label">Barrio <span
+                                    class="required-asterisk">*</span></label>
+                            <div class="lpr-select-wrapper">
+                                <select id="lprNeighborhood" name="neighborhood" class="lpr-select" required>
+                                    <option value="" disabled selected hidden>Seleccioná tu barrio...</option>
+                                    <option value="Casco urbano">Casco urbano</option>
+                                    <option value="Gonnet">Gonnet</option>
+                                    <option value="City Bell">City Bell</option>
+                                    <option value="Ringuelet">Ringuelet</option>
+                                    <option value="Tolosa">Tolosa</option>
+                                    <option value="Los Hornos">Los Hornos</option>
+                                    <option value="Villa Elisa">Villa Elisa</option>
+                                    <option value="Villa Elvira">Villa Elvira</option>
+                                    <option value="San Carlos">San Carlos</option>
+                                    <option value="Melchor Romero">Melchor Romero</option>
+                                    <option value="Altos de San Lorenzo">Altos de San Lorenzo</option>
+                                    <option value="Hernández">Hernández</option>
+                                    <option value="Joaquín Gorina">Joaquín Gorina</option>
+                                    <option value="Abasto">Abasto</option>
+                                </select>
+                                <!-- Icono Flecha Abajo SVG -->
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="lpr-select-arrow">
+                                    <path d="M6 9L12 15L18 9" stroke="#94A3B8" stroke-width="2.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Campo 4: Ubicación en el mapa -->
+                        <div class="lpr-form-group">
+                            <label class="lpr-field-label">Ubicación del incidente en el mapa <span
+                                    class="required-asterisk">*</span></label>
+                            <div id="lprMap" class="lpr-map"></div>
+                            <!-- Inputs ocultos para enviar la latitud y longitud -->
+                            <input type="hidden" id="lprLatitude" name="latitude" required>
+                            <input type="hidden" id="lprLongitude" name="longitude" required>
+                        </div>
+
+                        <!-- Campo 5: Fotos o videos -->
+                        <div class="lpr-form-group">
+                            <div class="lpr-upload-header">
+                                <label class="lpr-field-label">Fotos o videos</label>
+                                <span class="lpr-upload-hint">(opcional - max. 3, se comprimen automáticamente)</span>
+                            </div>
+                            <div class="lpr-upload-dropzone" id="lprUploadDropzone">
+                                <!-- Input de archivo real oculto -->
+                                <input type="file" id="lprFileInput" name="files[]" multiple accept="image/*,video/*"
+                                    style="display: none;">
+                                <!-- Icono de cámara SVG inline -->
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    class="lpr-upload-icon">
+                                    <path
+                                        d="M23 19C23 20.1 22.1 21 21 21H3C1.9 21 1 20.1 1 19V8C1 6.9 1.9 6 3 6H7.17L9 4H15L16.83 6H21C22.1 6 23 6.9 23 8V19Z"
+                                        stroke="#94A3B8" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <circle cx="12" cy="13" r="4" stroke="#94A3B8" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p class="lpr-upload-text">Hacé click para subir fotos</p>
+                                <p class="lpr-upload-subtext">Hasta 10 MB por imágen - JPG, PNG, WEBP, MP4</p>
+                            </div>
+                            <!-- Previsualizaciones de archivos -->
+                            <div class="lpr-upload-previews" id="lprUploadPreviews" style="display: none;"></div>
+                        </div>
+
+                        <!-- Campo 6: Número de reclamo -->
+                        <div class="lpr-form-group">
+                            <label for="lprTicketNumber" class="lpr-field-label">Número de reclamo (147 o ABSA)</label>
+                            <input type="text" id="lprTicketNumber" name="ticket-number" class="lpr-input"
+                                placeholder="Ej: AB-12345 (Opcional)">
+                        </div>
+
+                        <!-- Botón de Registro -->
+                        <div class="lpr-submit-container">
+                            <button type="submit" class="lpr-submit-btn">
+                                <span>Registrar un Reporte</span>
+                                <img src="icons/enviar.svg" alt="Enviar" class="lpr-submit-icon">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+            <!-- Pantalla de Feedback / Éxito (Oculta al inicio) -->
+            <div id="lprFeedbackScreen" class="lpr-feedback-card" style="display: none;">
+                <div class="lpr-success-icon-wrapper">
+                    <!-- Icono check SVG -->
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="lpr-success-icon">
+                        <circle cx="12" cy="12" r="10" fill="#10B981" />
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2 class="lpr-feedback-title">¡Reporte registrado con éxito!</h2>
+                <p class="lpr-feedback-text">Tu reporte ha sido procesado de manera estructurada y será incluido en el
+                    próximo informe quincenal que presentaremos ante el Municipio y el Concejo Deliberante.</p>
+                <div class="lpr-feedback-actions">
+                    <button type="button" id="lprResetBtn" class="lpr-btn-secondary">Hacer otro reporte</button>
+                    <a href="index.html" class="lpr-btn-primary">Volver a la Home</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="site-footer">
+        <div class="footer-main-content">
+            <div class="footer-columns">
+                <!-- Columna 1 (Logo) -->
+                <div class="footer-col footer-col-logo">
+                    <img src="icons/0221.svg" alt="0221.com.ar" class="footer-logo">
+                </div>
+
+                <!-- Columna 2 (Enlaces) -->
+                <div class="footer-col footer-col-links">
+                    <a href="#" class="footer-link">Terminos y Condiciones</a>
+                    <a href="#" class="footer-link">Politicas de privacidad</a>
+                    <a href="#" class="footer-link">Directrices IA</a>
+                </div>
+
+                <!-- Columna 3 (Contacto y Redes) -->
+                <div class="footer-col footer-col-info">
+                    <p class="footer-info-text">Contacto: redaccion@0221.com.ar - comercial@0221.com.ar</p>
+                    <p class="footer-info-text">Visita nuestros canales RSS</p>
+                    <div class="footer-social-section">
+                        <span class="footer-social-label">Seguinos en:</span>
+                        <div class="footer-social-icons">
+                            <a href="#" class="footer-social-link"><img src="icons/Instagram.svg" alt="Instagram"></a>
+                            <a href="#" class="footer-social-link"><img src="icons/Twitter.svg" alt="Twitter"></a>
+                            <a href="#" class="footer-social-link"><img src="icons/YouTube.svg" alt="YouTube"></a>
+                            <a href="#" class="footer-social-link"><img src="icons/FaceBook.svg" alt="Facebook"></a>
+                            <a href="#" class="footer-social-link"><img src="icons/Linkedin.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider-container">
+            <hr class="footer-divider">
+        </div>
+
+        <div class="footer-register-line">
+            <p>Registro DNDA: En trámite - Final Contenidos SA - Editor responsable: Zuccolotto Nino - Edición N° 2919 -
+                27 de abril de 2026 - Afiliado a ADEPA - Calle 49 N° 609 - La Plata</p>
+        </div>
+
+        <div class="footer-copyright-strip">
+            <p>Copyright 0221.com.ar 2026 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

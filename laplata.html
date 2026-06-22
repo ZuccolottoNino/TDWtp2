@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Plata - 0221.com.ar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script-.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Superposición del menú lateral -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Menú lateral izquierdo (Sidebar) -->
+    <aside class="sidebar-menu" id="sidebarMenu">
+        <!-- Encabezado con Logo y Botón de Cierre -->
+        <div class="sidebar-header">
+            <img src="icons/0221.svg" alt="0221.com.ar" class="sidebar-logo">
+            <button class="sidebar-close-btn" id="sidebarCloseBtn" aria-label="Cerrar menú">&times;</button>
+        </div>
+
+        <!-- Buscador -->
+        <div class="sidebar-search">
+            <div class="sidebar-search-bar">
+                <img src="icons/Lupa.svg" alt="Buscar">
+                <input type="text" placeholder="Buscar">
+            </div>
+        </div>
+
+        <!-- Lista de Secciones -->
+        <nav class="sidebar-nav">
+            <ul class="sidebar-list">
+                <li><a href="laplata.html">La Plata</a></li>
+                <li><a href="index.html#policiales">Policiales</a></li>
+                <li><a href="#">Universidad</a></li>
+                <li><a href="#">Provincia</a></li>
+                <li><a href="#">Nacional</a></li>
+                <li><a href="#">Berisso</a></li>
+                <li><a href="#">Ensenada</a></li>
+                <li><a href="index.html#deportes">Deportes</a></li>
+                <li><a href="#">Transporte</a></li>
+                <li><a href="#">¿Qué hago el finde?</a></li>
+                <li><a href="index.html#cronicas">Crónicas Platenses</a></li>
+                <li><a href="#">Entretenimiento</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="laplatareporta.html">La Plata Reporta</a></li>
+                <li><a href="#">Propuestas Laborales</a></li>
+            </ul>
+        </nav>
+
+        <!-- Redes Sociales -->
+        <div class="sidebar-social">
+            <span class="sidebar-social-title">Redes Sociales:</span>
+            <div class="sidebar-social-icons">
+                <a href="#" class="sidebar-social-link"><img src="icons/Instagram.svg" alt="Instagram"></a>
+                <a href="#" class="sidebar-social-link"><img src="icons/Twitter.svg" alt="Twitter"></a>
+                <a href="#" class="sidebar-social-link"><img src="icons/YouTube.svg" alt="YouTube"></a>
+                <a href="#" class="sidebar-social-link"><img src="icons/FaceBook.svg" alt="Facebook"></a>
+                <a href="#" class="sidebar-social-link"><img src="icons/Linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </aside>
+
+    <header class="site-header">
+
+        <!-- Fila Superior -->
+        <div class="header-top">
+            <div class="header-top-left">
+                <button class="sections-btn">
+                    <span>Secciones</span>
+                    <img src="icons/Secciones.svg" alt="Secciones">
+                </button>
+            </div>
+            <div class="header-top-center">
+                <a href="index.html" class="logo-link">
+                    <img src="icons/0221.svg" alt="0221.com.ar" class="logo-img">
+                </a>
+            </div>
+            <div class="header-top-right">
+                <a href="#" class="btn-login">Iniciar Sesión</a>
+                <a href="#" class="btn-register">Registrarse</a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Barra Inferior de Navegación (no sticky) -->
+    <div class="sub-header">
+
+        <!-- Fila Inferior -->
+        <div class="header-bottom">
+            <div class="search-bar">
+                <img src="icons/Lupa.svg" alt="Buscar">
+                <input type="text" placeholder="Buscar">
+            </div>
+            <nav class="social-nav">
+                <a href="#" class="social-link">
+                    <img src="icons/Instagram.svg" alt="Instagram">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/FaceBook.svg" alt="Facebook">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/Twitter.svg" alt="Twitter">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/YouTube.svg" alt="YouTube">
+                </a>
+                <a href="#" class="social-link">
+                    <img src="icons/Linkedin.svg" alt="LinkedIn">
+                </a>
+            </nav>
+        </div>
+
+    </div>
+
+    <!-- Contenedor del Contenido Principal -->
+    <main class="main-content">
+
+        <div class="laplata-container">
+
+            <!-- Columna Izquierda: Portada y Grilla de Noticias -->
+            <div class="laplata-main">
+
+                <!-- Portada Grande (Hero) -->
+                <div class="laplata-hero">
+                    <div class="laplata-hero-image-container">
+                        <img src="images/La Plata/LaPlataPortada.png" alt="Portada de La Plata">
+                        <div class="laplata-badge-zone">La Plata</div>
+                        <div class="laplata-badge-theme">Tribunales</div>
+                    </div>
+                    <h2 class="laplata-hero-title">
+                        La Suprema Corte bonaerense dejó firme la absolución de Mariano Bruera en la causa por
+                        asociación ilícita
+                    </h2>
+                </div>
+
+                <!-- Grilla de Noticias (2x2) -->
+                <div class="laplata-grid">
+                    <!-- Tarjeta 1 -->
+                    <article class="laplata-card">
+                        <div class="card-image-container">
+                            <img src="images/La Plata/LaPlataNoticia1.png" alt="Noticia 1">
+                        </div>
+                        <h4 class="card-title">
+                            <span class="title-highlight">Nueva demora.</span>
+                            <span class="title-text">Suspenden el inicio del juicio al odontólogo platense acusado de
+                                abuso tras un sorpresivo cambio de defensa</span>
+                        </h4>
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article class="laplata-card">
+                        <div class="card-image-container">
+                            <img src="images/La Plata/LaPlataNoticia2.png" alt="Noticia 2">
+                        </div>
+                        <h4 class="card-title">
+                            <span class="title-highlight">Tres años detenido.</span>
+                            <span class="title-text">Rechazan otro pedido de domiciliaria para Facundo Lemos, acusado de
+                                intentar matar a Sofía Tummo en La Plata</span>
+                        </h4>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article class="laplata-card">
+                        <div class="card-image-container">
+                            <img src="images/La Plata/LaPlataNoticia3.png" alt="Noticia 3">
+                        </div>
+                        <h4 class="card-title">
+                            <span class="title-highlight">Video.</span>
+                            <span class="title-text">Intentó atropellar a un hombre en La Plata, chocó un auto, quiso
+                                escapar y lo atraparon</span>
+                        </h4>
+                    </article>
+
+                    <!-- Tarjeta 4 -->
+                    <article class="laplata-card">
+                        <div class="card-image-container">
+                            <img src="images/La Plata/LaPlataNoticia4.png" alt="Noticia 4">
+                        </div>
+                        <h4 class="card-title">
+                            <span class="title-highlight">¿Quién es el platense?.</span>
+                            <span class="title-text">El juego de un programa de streaming que puso a prueba los
+                                prejuicios de la ciudad</span>
+                        </h4>
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- Columna Derecha: Panel de Noticias Destacadas -->
+            <aside class="laplata-sidebar">
+
+                <div class="destacadas-header">
+                    <img src="icons/noticias.svg" alt="Noticias Icon" class="destacadas-icon">
+                    <h3 class="destacadas-title">Noticias Destacadas</h3>
+                </div>
+
+                <!-- Feed Scrollable -->
+                <div class="destacadas-scroll">
+
+                    <!-- Noticia 1 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (1).png" alt="Noticia Destacada 1">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">21,33%.</span>
+                            <span class="title-text">Los docentes de la UNLP aceptaron la oferta salarial que les hizo
+                                el Gobierno nacional</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 2 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (2).png" alt="Noticia Destacada 2">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">Conmoción.</span>
+                            <span class="title-text">Hallaron muerta a una adolescente de 15 años en La Plata</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 3 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (3).png" alt="Noticia Destacada 3">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">"Bomba antártica".</span>
+                            <span class="title-text">Se va la niebla, pero llega una ola polar con mínimas cercanas a
+                                los cero grados</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 4 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (4).png" alt="Noticia Destacada 4">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">Conmoción.</span>
+                            <span class="title-text">Una mujer de 53 años murió mientras hacía compras en una carnicería
+                                de La Plata</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 5 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (5).png" alt="Noticia Destacada 5">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">A 70 años.</span>
+                            <span class="title-text">Emotivo homenaje en La Plata a los caídos de la resistencia
+                                peronista</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 6 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (6).png" alt="Noticia Destacada 6">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">Conmoción.</span>
+                            <span class="title-text">Una chica de 15 años intentó quitarse la vida en una escuela de La
+                                Plata</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 7 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (7).png" alt="Noticia Destacada 7">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">Proyecto libertario.</span>
+                            <span class="title-text">Buscan desregular los taxis y avanzar hacia un sistema de tarifas
+                                libres</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 8 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (8).png" alt="Noticia Destacada 8">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">Proyección internacional.</span>
+                            <span class="title-text">Abrió la inscripción a las carreras del IAG con prestigiosos
+                                docentes y amplia salida laboral</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 9 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (9).png" alt="Noticia Destacada 9">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">Pronóstico.</span>
+                            <span class="title-text">La semana sigue con un martes de mucho frío que anticipa más
+                                mañanas invernales en La Plata</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 10 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (10).png" alt="Noticia Destacada 10">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">Nuevo servicio.</span>
+                            <span class="title-text">Climatización, 200 km de autonomía y puertos USB: así es el micro
+                                eléctrico</span>
+                        </p>
+                    </div>
+
+                    <!-- Noticia 11 -->
+                    <div class="destacada-item">
+                        <div class="destacada-item-img">
+                            <img src="images/La Plata/notciaDestacada (11).png" alt="Noticia Destacada 11">
+                        </div>
+                        <p class="destacada-item-title">
+                            <span class="title-highlight">Atención.</span>
+                            <span class="title-text">Las obras en 7 y 32 llegan a su fin y confirman cuándo se liberará
+                                el tránsito</span>
+                        </p>
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+        <!-- Sección Gonnet -->
+        <section class="gonnet-section">
+            <div class="gonnet-header">
+                <span class="gonnet-title-text">Gonnet</span>
+                <span class="gonnet-separator"></span>
+                <img src="icons/0221.svg" alt="0221.com.ar" class="gonnet-logo">
+            </div>
+
+            <!-- Gonnet Hero (Top Row) -->
+            <div class="gonnet-hero">
+                <div class="gonnet-hero-image-container">
+                    <img src="images/La Plata/gonnet (5).png" alt="Gonnet Hero">
+                </div>
+                <div class="gonnet-hero-info">
+                    <div class="gonnet-hero-badge-container">
+                        <span class="gonnet-hero-badge">Choque en cadena</span>
+                    </div>
+                    <h2 class="gonnet-hero-title">Un choque en Camino Centenario terminó un vuelco y un peatón herido
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Gonnet Carousel (Bottom Row) -->
+            <div class="gonnet-carousel">
+                <!-- Tarjeta 1 (Gonnet 1) -->
+                <article class="gonnet-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/gonnet (1).png" alt="Noticia Gonnet 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Raices de Gonnet.</span>
+                        <span class="title-text">Un colegio privado de La Plata se adueñó de una vereda y genera caos en
+                            el tránsito</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 (Gonnet 2) -->
+                <article class="gonnet-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/gonnet (2).png" alt="Noticia Gonnet 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Pelea por su vida.</span>
+                        <span class="title-text">Un motociclista resbaló en el Camino Belgrano y sufrió graves
+                            heridas</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 (Gonnet 3) -->
+                <article class="gonnet-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/gonnet (3).png" alt="Noticia Gonnet 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">En 19 y 520.</span>
+                        <span class="title-text">Un hombre de La Plata denunció que lo balearon en un intento de robo,
+                            pero la Policía duda de su versión</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 (Gonnet 4) -->
+                <article class="gonnet-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/gonnet (4).png" alt="Noticia Gonnet 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">A siete meses.</span>
+                        <span class="title-text">Se entregó el último prófugo por la pelea de la UOCRA en el Hospital de
+                            Gonnet</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección City Bell -->
+        <section class="citybell-section">
+            <div class="citybell-header">
+                <span class="citybell-title-text">City Bell</span>
+                <span class="citybell-separator"></span>
+                <img src="icons/0221.svg" alt="0221.com.ar" class="citybell-logo">
+            </div>
+
+            <!-- City Bell Hero (Top Row) -->
+            <div class="citybell-hero">
+                <div class="citybell-hero-image-container">
+                    <img src="images/La Plata/cityBell (5).png" alt="City Bell Hero">
+                </div>
+                <div class="citybell-hero-info">
+                    <div class="citybell-hero-badge-container">
+                        <span class="citybell-hero-badge">Choque y alerta</span>
+                    </div>
+                    <h2 class="citybell-hero-title">Familias de alumnos de de City Bell reclaman medidas de seguridad
+                        vial en la zona</h2>
+                </div>
+            </div>
+
+            <!-- City Bell Carousel (Bottom Row) -->
+            <div class="citybell-carousel">
+                <!-- Tarjeta 1 (City Bell 1) -->
+                <article class="citybell-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/cityBell (1).png" alt="Noticia City Bell 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Último adiós.</span>
+                        <span class="title-text">Familiares y amigos del joven asesinado en City Bell realizarán una
+                            caravana para despedirlo</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 (City Bell 2) -->
+                <article class="citybell-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/cityBell (2).png" alt="Noticia City Bell 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">¿De qué se trata?.</span>
+                        <span class="title-text">La pista que podría cambiar el rumbo de la investigación para
+                            esclarecer el crimen en City Bell</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 (City Bell 3) -->
+                <article class="citybell-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/cityBell (3).png" alt="Noticia City Bell 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Conmoción.</span>
+                        <span class="title-text">Asesinaron a un hombre a puñaladas en City Bell y detuvieron a dos
+                            sospechosos</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 (City Bell 4) -->
+                <article class="citybell-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/cityBell (4).png" alt="Noticia City Bell 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Las claves.</span>
+                        <span class="title-text">Discusión de pareja, forcejeos y versiones cruzadas: ¿qué se sabe del
+                            crimen en City Bell?</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Parque Saavedra -->
+        <section class="saavedra-section">
+            <div class="saavedra-header">
+                <span class="saavedra-title-text">Parque Saavedra</span>
+                <span class="saavedra-separator"></span>
+                <img src="icons/0221.svg" alt="0221.com.ar" class="saavedra-logo">
+            </div>
+
+            <!-- Saavedra Hero (Top Row) -->
+            <div class="saavedra-hero">
+                <div class="saavedra-hero-image-container">
+                    <img src="images/La Plata/saavedra (5).png" alt="Parque Saavedra Hero">
+                </div>
+                <div class="saavedra-hero-info">
+                    <div class="saavedra-hero-badge-container">
+                        <span class="saavedra-hero-badge">Sobre las obras</span>
+                    </div>
+                    <h2 class="saavedra-hero-title">¿Cuáles fueron los planteos de los vecinos y qué respondió la
+                        Municipalidad?</h2>
+                </div>
+            </div>
+
+            <!-- Saavedra Carousel (Bottom Row) -->
+            <div class="saavedra-carousel">
+                <!-- Tarjeta 1 (Saavedra 1) -->
+                <article class="saavedra-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/saavedra (1).png" alt="Noticia Parque Saavedra 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Obras en el Parque Saavedra.</span>
+                        <span class="title-text">Abrirán una rambla cercana al Hospital de Niños para agilizar el acceso
+                            de las ambulancias</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 (Saavedra 2) -->
+                <article class="saavedra-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/saavedra (2).png" alt="Noticia Parque Saavedra 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Nueva manifestación.</span>
+                        <span class="title-text">Convocan a una caminata contra el proyecto de ensanchamiento del
+                            Saavedra</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 (Saavedra 3) -->
+                <article class="saavedra-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/saavedra (3).png" alt="Noticia Parque Saavedra 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Tras la consulta pública.</span>
+                        <span class="title-text">Volvieron a postergar la licitación de las obras de ampliación del
+                            Parque Saavedra</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 (Saavedra 4) -->
+                <article class="saavedra-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/saavedra (4).png" alt="Noticia Parque Saavedra 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Micros, árboles y feria.</span>
+                        <span class="title-text">Se conocieron las primeras opiniones vecinales sobre la remodelación
+                            del Parque Saavedra</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Ringuelet -->
+        <section class="ringuelet-section">
+            <div class="ringuelet-header">
+                <span class="ringuelet-title-text">Ringuelet</span>
+                <span class="ringuelet-separator"></span>
+                <img src="icons/0221.svg" alt="0221.com.ar" class="ringuelet-logo">
+            </div>
+
+            <!-- Ringuelet Hero (Top Row) -->
+            <div class="ringuelet-hero">
+                <div class="ringuelet-hero-image-container">
+                    <img src="images/La Plata/ringuelet (5).png" alt="Ringuelet Hero">
+                </div>
+                <div class="ringuelet-hero-info">
+                    <div class="ringuelet-hero-badge-container">
+                        <span class="ringuelet-hero-badge">Denuncia un vecino</span>
+                    </div>
+                    <h2 class="ringuelet-hero-title">Un hombre fue a pedir explicaciones por la golpiza que sufrió su
+                        hijo y lo echaron a los tiros</h2>
+                </div>
+            </div>
+
+            <!-- Ringuelet Carousel (Bottom Row) -->
+            <div class="ringuelet-carousel">
+                <!-- Tarjeta 1 (Ringuelet 1) -->
+                <article class="ringuelet-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/ringuelet (1).png" alt="Noticia Ringuelet 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Violencia de género.</span>
+                        <span class="title-text">Rescataron a una joven en Ringuelet que había sido secuestrada por su
+                            expareja</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 (Ringuelet 2) -->
+                <article class="ringuelet-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/ringuelet (2).png" alt="Noticia Ringuelet 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">"¿Es para los giles?".</span>
+                        <span class="title-text">Filmó a su bebé jugando con un revólver y la detuvieron en La
+                            Plata</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 (Ringuelet 3) -->
+                <article class="ringuelet-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/ringuelet (3).png" alt="Noticia Ringuelet 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">De no creer.</span>
+                        <span class="title-text">A horas de su reapertura, cerraron otra vez el supermercado El Duende
+                            por vender comida vencida</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 (Ringuelet 4) -->
+                <article class="ringuelet-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/ringuelet (4).png" alt="Noticia Ringuelet 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Cortes programados.</span>
+                        <span class="title-text">Edelap anunció tareas de mantenimiento en la red y algunas zonas de La
+                            Plata podrían quedarse sin luz</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Tolosa -->
+        <section class="tolosa-section">
+            <div class="tolosa-header">
+                <span class="tolosa-title-text">Tolosa</span>
+                <span class="tolosa-separator"></span>
+                <img src="icons/0221.svg" alt="0221.com.ar" class="tolosa-logo">
+            </div>
+
+            <!-- Tolosa Hero (Top Row) -->
+            <div class="tolosa-hero">
+                <div class="tolosa-hero-image-container">
+                    <img src="images/La Plata/tolosa (5).png" alt="Tolosa Hero">
+                </div>
+                <div class="tolosa-hero-info">
+                    <div class="tolosa-hero-badge-container">
+                        <span class="tolosa-hero-badge">Investigación</span>
+                    </div>
+                    <h2 class="tolosa-hero-title">El policía acusado por el crimen en Tolosa quedó detenido</h2>
+                </div>
+            </div>
+
+            <!-- Tolosa Carousel (Bottom Row) -->
+            <div class="tolosa-carousel">
+                <!-- Tarjeta 1 (Tolosa 1) -->
+                <article class="tolosa-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/tolosa (1).png" alt="Noticia Tolosa 1">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Presunto robo y disparos.</span>
+                        <span class="title-text">Avanza la investigación por la muerte de un ladrón a manos de un
+                            policía</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 2 (Tolosa 2) -->
+                <article class="tolosa-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/tolosa (2).png" alt="Noticia Tolosa 2">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Control policial.</span>
+                        <span class="title-text">Un operativo en Tolosa terminó con varias motos secuestradas y seis
+                            detenidos</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 3 (Tolosa 3) -->
+                <article class="tolosa-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/tolosa (3).png" alt="Noticia Tolosa 3">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Confuso episodio.</span>
+                        <span class="title-text">Un policía mató a un motociclista en Tolosa en un presunto intento de
+                            robo</span>
+                    </h4>
+                </article>
+
+                <!-- Tarjeta 4 (Tolosa 4) -->
+                <article class="tolosa-card">
+                    <div class="card-image-container">
+                        <img src="images/La Plata/tolosa (4).png" alt="Noticia Tolosa 4">
+                    </div>
+                    <h4 class="card-title">
+                        <span class="title-highlight">Reclamo en las calles.</span>
+                        <span class="title-text">"Somos un blanco a toda hora": los vecinos de Tolosa se movilizaron por
+                            el hartazgo ante la inseguridad</span>
+                    </h4>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="site-footer">
+        <div class="footer-main-content">
+            <div class="footer-columns">
+                <!-- Columna 1 (Logo) -->
+                <div class="footer-col footer-col-logo">
+                    <img src="icons/0221.svg" alt="0221.com.ar" class="footer-logo">
+                </div>
+
+                <!-- Columna 2 (Enlaces) -->
+                <div class="footer-col footer-col-links">
+                    <a href="#" class="footer-link">Terminos y Condiciones</a>
+                    <a href="#" class="footer-link">Politicas de privacidad</a>
+                    <a href="#" class="footer-link">Directrices IA</a>
+                </div>
+
+                <!-- Columna 3 (Contacto y Redes) -->
+                <div class="footer-col footer-col-info">
+                    <p class="footer-info-text">Contacto: redaccion@0221.com.ar - comercial@0221.com.ar</p>
+                    <p class="footer-info-text">Visita nuestros canales RSS</p>
+                    <div class="footer-social-section">
+                        <span class="footer-social-label">Seguinos en:</span>
+                        <div class="footer-social-icons">
+                            <a href="#" class="footer-social-link"><img src="icons/Instagram.svg" alt="Instagram"></a>
+                            <a href="#" class="footer-social-link"><img src="icons/Twitter.svg" alt="Twitter"></a>
+                            <a href="#" class="footer-social-link"><img src="icons/YouTube.svg" alt="YouTube"></a>
+                            <a href="#" class="footer-social-link"><img src="icons/FaceBook.svg" alt="Facebook"></a>
+                            <a href="#" class="footer-social-link"><img src="icons/Linkedin.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-divider-container">
+            <hr class="footer-divider">
+        </div>
+
+        <div class="footer-register-line">
+            <p>Registro DNDA: En trámite - Final Contenidos SA - Editor responsable: Zuccolotto Nino - Edición N° 2919 -
+                27 de abril de 2026 - Afiliado a ADEPA - Calle 49 N° 609 - La Plata</p>
+        </div>
+
+        <div class="footer-copyright-strip">
+            <p>Copyright 0221.com.ar 2026 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
