@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // ARRASTRE CON EL MOUSE PARA LOS CARRUSELES (DRAG-TO-SCROLL)
     // ==========================================
-    const carousels = document.querySelectorAll('[class*="-carousel"]');
+    const carousels = document.querySelectorAll('[class*="-carousel"], .cronicas-grid');
     
     carousels.forEach(carousel => {
         let isDown = false;
@@ -257,14 +257,37 @@ document.addEventListener('DOMContentLoaded', () => {
             // Removemos active de todos los botones
             categoryBtns.forEach(b => b.classList.remove('active'));
             
+            let categoryValue = '';
             if (isAlreadyActive) {
                 // Si ya estaba activo, al hacer clic se deselecciona
                 if (selectedCategoryInput) selectedCategoryInput.value = '';
             } else {
                 // Si no estaba activo, lo activamos y guardamos el valor
                 btn.classList.add('active');
-                const categoryValue = btn.getAttribute('data-category');
+                categoryValue = btn.getAttribute('data-category') || '';
                 if (selectedCategoryInput) selectedCategoryInput.value = categoryValue;
+            }
+
+            // Actualizar etiqueta del campo de número de reclamo/línea de transporte
+            const ticketLabel = document.querySelector('label[for="lprTicketNumber"]');
+            const ticketInput = document.getElementById('lprTicketNumber');
+            if (ticketLabel && ticketInput) {
+                if (categoryValue === 'Transporte') {
+                    ticketLabel.textContent = 'Línea de transporte';
+                    ticketInput.placeholder = 'Ej: Línea 202 (Opcional)';
+                } else if (categoryValue === 'Luminarias') {
+                    ticketLabel.textContent = 'Código de poste / columna';
+                    ticketInput.placeholder = 'Ej: LP-8493 (Opcional)';
+                } else if (categoryValue === 'Agua') {
+                    ticketLabel.textContent = 'Empresa de servicio (ABSA o Municipio)';
+                    ticketInput.placeholder = 'Ej: ABSA / Municipal (Opcional)';
+                } else if (categoryValue === 'Inseguridad') {
+                    ticketLabel.textContent = 'Número de denuncia policial';
+                    ticketInput.placeholder = 'Ej: IPP-12-004532-26 (Opcional)';
+                } else {
+                    ticketLabel.textContent = 'Número de reclamo (147 o ABSA)';
+                    ticketInput.placeholder = 'Ej: AB-12345 (Opcional)';
+                }
             }
         });
     });
@@ -488,6 +511,14 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.lpr-category-btn').forEach(b => b.classList.remove('active'));
             document.getElementById('lprSelectedCategory').value = '';
             
+            // Restaurar etiqueta del ticket a su valor por defecto
+            const ticketLabel = document.querySelector('label[for="lprTicketNumber"]');
+            const ticketInput = document.getElementById('lprTicketNumber');
+            if (ticketLabel && ticketInput) {
+                ticketLabel.textContent = 'Número de reclamo (147 o ABSA)';
+                ticketInput.placeholder = 'Ej: AB-12345 (Opcional)';
+            }
+            
             // Limpiar mapa
             document.getElementById('lprLatitude').value = '';
             document.getElementById('lprLongitude').value = '';
@@ -527,6 +558,206 @@ document.addEventListener('DOMContentLoaded', () => {
     if (heroRegisterBtn && categorySection) {
         heroRegisterBtn.addEventListener('click', () => {
             categorySection.scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
+    // ==========================================
+    // BANNER ACTIVAR UBICACIÓN (Flotante persistente)
+    // ==========================================
+    const locationBanner = document.getElementById('locationBanner');
+    const locationBannerBtn = document.getElementById('locationBannerBtn');
+
+    // Función para calcular el barrio más cercano de La Plata según coordenadas
+    function getNeighborhood(lat, lng) {
+        const points = [
+            { name: 'City Bell', lat: -34.8647, lng: -58.0461 },
+            { name: 'Gonnet', lat: -34.8776, lng: -58.0179 },
+            { name: 'Ringuelet', lat: -34.8972, lng: -57.9892 },
+            { name: 'Tolosa', lat: -34.8986, lng: -57.9686 },
+            { name: 'Saavedra', lat: -34.9318, lng: -57.9431 },
+            { name: 'La Plata', lat: -34.9214, lng: -57.9545 }
+        ];
+        
+        let closest = points[0];
+        let minDistance = Infinity;
+        
+        points.forEach(point => {
+            const dist = Math.pow(point.lat - lat, 2) + Math.pow(point.lng - lng, 2);
+            if (dist < minDistance) {
+                minDistance = dist;
+                closest = point;
+            }
+        });
+        
+        return closest.name;
+    }
+
+    // Función para actualizar los badges de ubicación en la cabecera del hero
+    function updateLocationBadges(neighborhoodName) {
+        const badgeContainer = document.querySelector('.badge-container');
+        const badgeZone = document.querySelector('.badge-zone');
+        const badgeLocation = document.querySelector('.badge-location');
+        
+        if (badgeContainer && badgeZone && badgeLocation) {
+            badgeContainer.classList.remove('no-location');
+            badgeZone.classList.remove('location-disabled');
+            badgeZone.textContent = 'EN TU ZONA';
+            badgeLocation.textContent = neighborhoodName;
+            badgeLocation.style.display = 'block';
+        }
+    }
+
+    // Función para solicitar ubicación al usuario
+    function requestUserLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+
+                    // Guardar estado de éxito y coordenadas
+                    localStorage.setItem('userLocationEnabled', 'true');
+                    localStorage.setItem('userLatitude', lat);
+                    localStorage.setItem('userLongitude', lng);
+                    
+                    // Encontrar barrio correspondiente y actualizar badges
+                    const neighborhood = getNeighborhood(lat, lng);
+                    updateLocationBadges(neighborhood);
+                    
+                    // Ordenar secciones por cercanía si estamos en laplata.html
+                    sortLaPlataSections();
+                    
+                    // Ocultar banner principal si existe
+                    if (locationBanner) {
+                        locationBanner.classList.remove('active');
+                    }
+                    
+                    // Ocultar banner dinámico de La Plata si existe
+                    const activateLocBanner = document.getElementById('activateLocationBanner');
+                    if (activateLocBanner) {
+                        activateLocBanner.style.display = 'none';
+                    }
+
+                    alert(`Ubicación activada con éxito. Tu zona es: ${neighborhood}.`);
+                },
+                (error) => {
+                    console.error('Error de geolocalización:', error);
+                    alert('No se pudo activar la ubicación. Por favor, habilitá los permisos de ubicación en tu navegador.');
+                }
+            );
+        } else {
+            alert('La geolocalización no está soportada por este navegador.');
+        }
+    }
+
+    if (locationBanner && locationBannerBtn) {
+        // Mostrar el banner después de 1.5 segundos si no ha sido activado antes
+        if (!localStorage.getItem('userLocationEnabled')) {
+            setTimeout(() => {
+                locationBanner.classList.add('active');
+            }, 1500);
+        }
+
+        // Activar ubicación al hacer clic en el botón
+        locationBannerBtn.addEventListener('click', requestUserLocation);
+    }
+
+    // Configurar el click en el banner dinámico de La Plata si existe
+    const activateLocBannerLink = document.getElementById('activateLocationLink');
+    if (activateLocBannerLink) {
+        activateLocBannerLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            requestUserLocation();
+        });
+    }
+
+    // ==========================================
+    // ORDENACIÓN DE SECCIONES POR CERCANÍA (LA PLATA)
+    // ==========================================
+    function sortLaPlataSections() {
+        const laPlataContainer = document.querySelector('.laplata-container');
+        if (!laPlataContainer) return; // Solo ejecutar en la sección La Plata (laplata.html)
+        
+        const mainContent = laPlataContainer.parentNode;
+        
+        const sections = [
+            { name: 'gonnet', element: document.querySelector('.gonnet-section'), lat: -34.8776, lng: -58.0179 },
+            { name: 'citybell', element: document.querySelector('.citybell-section'), lat: -34.8647, lng: -58.0461 },
+            { name: 'saavedra', element: document.querySelector('.saavedra-section'), lat: -34.9318, lng: -57.9431 },
+            { name: 'ringuelet', element: document.querySelector('.ringuelet-section'), lat: -34.8972, lng: -57.9892 },
+            { name: 'tolosa', element: document.querySelector('.tolosa-section'), lat: -34.8986, lng: -57.9686 }
+        ];
+
+        // Filtrar elementos existentes
+        const validSections = sections.filter(s => s.element !== null);
+
+        const isLocEnabled = localStorage.getItem('userLocationEnabled') === 'true';
+        
+        if (isLocEnabled) {
+            const lat = parseFloat(localStorage.getItem('userLatitude'));
+            const lng = parseFloat(localStorage.getItem('userLongitude'));
+            
+            if (!isNaN(lat) && !isNaN(lng)) {
+                // Ordenar por distancia de menor a mayor
+                validSections.sort((a, b) => {
+                    const distA = Math.pow(a.lat - lat, 2) + Math.pow(a.lng - lng, 2);
+                    const distB = Math.pow(b.lat - lat, 2) + Math.pow(b.lng - lng, 2);
+                    return distA - distB;
+                });
+            }
+        } else {
+            // Orden por defecto cuando está desactivado: Tolosa, Ringuelet, Gonnet, City Bell, Parque Saavedra
+            const defaultOrder = ['tolosa', 'ringuelet', 'gonnet', 'citybell', 'saavedra'];
+            validSections.sort((a, b) => {
+                return defaultOrder.indexOf(a.name) - defaultOrder.indexOf(b.name);
+            });
+        }
+
+        // Reubicar elementos en el DOM en el orden calculado y limpiar clases de banner
+        validSections.forEach(s => {
+            mainContent.appendChild(s.element);
+            if (s.element) {
+                s.element.classList.remove('has-banner-above');
+            }
+        });
+
+        // Posicionar el banner de ubicación activa en La Plata y aplicar clases
+        const banner = document.getElementById('activateLocationBanner');
+        if (banner) {
+            if (isLocEnabled) {
+                banner.style.display = 'none';
+            } else {
+                banner.style.display = 'inline-block';
+                const firstSection = validSections[0]?.element;
+                if (firstSection) {
+                    mainContent.insertBefore(banner, firstSection);
+                    firstSection.classList.add('has-banner-above');
+                }
+            }
+        }
+    }
+
+    // Cargar estado inicial de ubicación
+    const isLocationEnabled = localStorage.getItem('userLocationEnabled') === 'true';
+    if (isLocationEnabled) {
+        const lat = parseFloat(localStorage.getItem('userLatitude'));
+        const lng = parseFloat(localStorage.getItem('userLongitude'));
+        if (!isNaN(lat) && !isNaN(lng)) {
+            const neighborhood = getNeighborhood(lat, lng);
+            updateLocationBadges(neighborhood);
+        }
+    }
+
+    // Ordenar las secciones de La Plata al cargar la página
+    sortLaPlataSections();
+
+    // Permitir activar ubicación al tocar el badge celeste cuando está desactivado
+    const badgeZone = document.querySelector('.badge-zone');
+    if (badgeZone) {
+        badgeZone.addEventListener('click', () => {
+            if (badgeZone.classList.contains('location-disabled')) {
+                requestUserLocation();
+            }
         });
     }
 });

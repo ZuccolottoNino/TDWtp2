@@ -123,9 +123,9 @@
         <section class="news-section">
 
             <div class="hero-card" id="heroCard">
-                <div class="badge-container">
-                    <div class="badge-zone">EN TU ZONA</div>
-                    <div class="badge-location">City Bell</div>
+                <div class="badge-container no-location">
+                    <div class="badge-zone location-disabled">Activa tu ubicación para noticias personalizadas</div>
+                    <div class="badge-location" style="display: none;"></div>
                 </div>
 
                 <div class="hero-title-container">
@@ -330,9 +330,8 @@
         <section class="vecinos-section">
             <div class="vecinos-header">
                 <div class="vecinos-title-badge">Los vecinos reportan</div>
+                <div class="vecinos-divider"></div>
                 <a href="laplatareporta.html" class="vecinos-link-badge">Hacé tu reporte</a>
-                <span class="vecinos-text-badge">Tu opinión importa</span>
-                <div class="vecinos-header-line"></div>
             </div>
 
             <div class="vecinos-carousel">
@@ -368,7 +367,8 @@
                         </div>
                         <h4 class="card-title">
                             <span class="title-highlight">Micros, árboles y feria.</span>
-                            <span class="title-text">Se conocieron las primeras opiniones vecinales sobre la remodelación
+                            <span class="title-text">Se conocieron las primeras opiniones vecinales sobre la
+                                remodelación
                                 del Parque Saavedra</span>
                         </h4>
                     </a>
@@ -385,6 +385,79 @@
                             el hartazgo ante la inseguridad</span>
                     </h4>
                 </article>
+            </div>
+        </section>
+
+        <!-- Sección Reportes Recientes -->
+        <section class="reportes-recientes-section">
+            <div class="reportes-recientes-header">
+                <h2 class="reportes-recientes-title">Reportes Recientes</h2>
+            </div>
+
+            <div class="reportes-container">
+                <!-- Tarjeta 1 -->
+                <article class="reporte-card">
+                    <div class="reporte-tags">
+                        <span class="tag-reportado">Reportado</span>
+                        <span class="tag-categoria tag-otros">Otros</span>
+                    </div>
+                    <p class="reporte-text">En la zona de 1 entre 71 y 72 no hay cámaras ni luminarias, zona insegura, venta de drogas, trapitos, gente indigente</p>
+                    <div class="reporte-location">
+                        <svg class="location-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#94A3B8" />
+                        </svg>
+                        <span class="location-text">1 ENTRE 71 Y 72</span>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2 -->
+                <article class="reporte-card">
+                    <div class="reporte-tags">
+                        <span class="tag-reportado">Reportado</span>
+                        <span class="tag-categoria tag-residuos">Residuos</span>
+                    </div>
+                    <p class="reporte-text">Basural crónico en 148 y 54. En esta esquina hay un basural permanente que en estas últimas semanas se acrecentó enorme</p>
+                    <div class="reporte-location">
+                        <svg class="location-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#94A3B8" />
+                        </svg>
+                        <span class="location-text">148 y 54</span>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3 -->
+                <article class="reporte-card">
+                    <div class="reporte-tags">
+                        <span class="tag-reportado">Reportado</span>
+                        <span class="tag-categoria tag-calles">Calles</span>
+                    </div>
+                    <p class="reporte-text">Pozo muy grande en esquina de 31 y 507 sobre 31</p>
+                    <div class="reporte-location">
+                        <svg class="location-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#94A3B8" />
+                        </svg>
+                        <span class="location-text">31 y 507</span>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4 -->
+                <article class="reporte-card">
+                    <div class="reporte-tags">
+                        <span class="tag-reportado">Reportado</span>
+                        <span class="tag-categoria tag-luminarias">Luminarias</span>
+                    </div>
+                    <p class="reporte-text">Luminaria sin funcionar en calle 150 sobre mi cuadra.</p>
+                    <div class="reporte-location">
+                        <svg class="location-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#94A3B8" />
+                        </svg>
+                        <span class="location-text">150 n° 1266</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="red-platense-container">
+                <a href="laplatareporta.html" class="btn-red-platense">Sumate a la red platense</a>
             </div>
         </section>
 
@@ -828,6 +901,21 @@
             <p>Copyright 0221.com.ar 2026 - Todos los derechos reservados</p>
         </div>
     </footer>
+
+    <!-- Banner para activar ubicación -->
+    <div class="location-banner" id="locationBanner">
+        <div class="location-banner-content">
+            <svg class="location-banner-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <div class="location-banner-text">
+                <h4 class="location-banner-title">Activa tu ubicación</h4>
+                <p class="location-banner-desc">Para ver noticias de tu zona</p>
+            </div>
+        </div>
+        <button class="location-banner-btn" id="locationBannerBtn">Activar ubicación</button>
+    </div>
 
 </body>
 
