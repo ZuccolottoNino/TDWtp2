@@ -675,6 +675,25 @@ body {
   padding: 6px 28px 6px 16px;
   clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
   z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.badge-zone.location-disabled {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+  padding: 6px 24px 6px 16px;
+  cursor: pointer;
+}
+
+.badge-zone.location-disabled:hover {
+  background-color: #0087c2;
+}
+
+@media (max-width: 767px) {
+  .badge-zone.location-disabled {
+    font-size: 12px;
+    padding: 6px 18px 6px 12px;
+    clip-path: polygon(0 0, 100% 0, 93% 100%, 0 100%);
+  }
 }
 
 .badge-location {
@@ -1048,53 +1067,52 @@ body {
 .vecinos-header {
   display: flex;
   align-items: center;
-  background-color: #cbd5e1;
+  background-color: #46c3f7;
+  height: 52px;
   margin-bottom: 25px;
   position: relative;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
 }
 
 .vecinos-title-badge {
   background-color: #009fe3;
   color: white;
   font-family: var(--font-headings);
-  font-weight: 800;
+  font-weight: 900;
   font-style: italic;
-  font-size: var(--fs-link);
-  padding: 8px 32px 8px 20px;
-  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
-  z-index: 3;
+  font-size: 32px;
+  line-height: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 24px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+  z-index: 2;
+}
+
+.vecinos-divider {
+  background-color: white;
+  height: 100%;
+  width: 23px;
+  clip-path: polygon(20px 0, 100% 0, 3px 100%, 0 100%);
+  margin-left: -20px;
+  z-index: 1;
 }
 
 .vecinos-link-badge {
-  background-color: #ffffff;
-  color: #009fe3;
+  color: white;
   font-family: var(--font-headings);
   font-weight: 800;
   font-style: italic;
-  font-size: var(--fs-link);
-  padding: 8px 32px 8px 32px;
-  margin-left: -18px;
-  clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+  font-size: var(--fs-h4);
+  line-height: 1;
+  margin-left: 15px;
   text-decoration: underline;
-  z-index: 2;
   transition: opacity 0.2s ease;
 }
 
 .vecinos-link-badge:hover {
   opacity: 0.85;
-}
-
-.vecinos-text-badge {
-  background-color: #f1f5f9;
-  color: #94a3b8;
-  font-family: var(--font-headings);
-  font-weight: 700;
-  font-style: italic;
-  font-size: var(--fs-link);
-  padding: 8px 32px 8px 32px;
-  margin-left: -18px;
-  clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
-  z-index: 1;
 }
 
 /* ==========================================
@@ -1327,14 +1345,12 @@ body {
   flex-direction: column;
 }
 
-.recientes-grande-card .card-image-container,
-.cronicas-card .card-image-container {
+.recientes-grande-card .card-image-container {
   aspect-ratio: 16 / 9;
   /* Imagen más apaisada y compacta */
 }
 
-.recientes-grande-card .card-title,
-.cronicas-card .card-title {
+.recientes-grande-card .card-title {
   font-family: var(--font-headings);
   font-size: var(--fs-h3);
   /* Achicar a H3 estándar */
@@ -1344,20 +1360,42 @@ body {
   margin-bottom: 0;
 }
 
+.cronicas-card .card-title {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h4);
+  font-weight: 800;
+  line-height: 1.35;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
 /* ==========================================
    SECCIÓN CRÓNICAS PLATENSES
    ========================================== */
 
 .cronicas-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 60px;
   margin-bottom: 40px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+  margin-right: calc(-1 * var(--page-padding));
+  padding-right: var(--page-padding);
+}
+
+.cronicas-grid::-webkit-scrollbar {
+  display: none; /* Hide scrollbar Chrome/Safari */
 }
 
 .cronicas-card {
   display: flex;
   flex-direction: column;
+  flex: 0 0 calc(38.333% - 123px);
+  scroll-snap-align: start;
 }
 
 .title-badge-highlight {
@@ -1750,6 +1788,7 @@ body {
 
   .card-title {
     margin-top: 10px;
+    font-size: var(--fs-link);
   }
 
   /* Cabecera Móvil - Los Vecinos Reportan */
@@ -1758,15 +1797,31 @@ body {
     /* Oculta "Tu opinión importa" en móviles */
   }
 
+  .vecinos-header {
+    height: 75px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+  }
+
   .vecinos-title-badge {
-    padding: 6px 20px 6px 12px;
-    font-size: 14px;
+    font-size: 24px;
+    line-height: 1.15;
+    padding: 0 30px 0 16px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+  }
+
+  .vecinos-divider {
+    width: 18px;
+    clip-path: polygon(15px 0, 100% 0, 3px 100%, 0 100%);
+    margin-left: -15px;
   }
 
   .vecinos-link-badge {
-    padding: 6px 20px 6px 20px;
-    font-size: 14px;
-    margin-left: -12px;
+    font-size: var(--fs-h4);
+    line-height: 1.15;
+    margin-left: 10px;
+    padding: 0;
+    clip-path: none;
+    background-color: transparent;
   }
 
   /* Cabecera y Hero Móvil - Deportes, Policiales, Crónicas Platenses y Streaming */
@@ -1909,8 +1964,7 @@ body {
   }
 
   .cronicas-card {
-    flex: 0 0 calc(80% - 8px);
-    /* Tarjeta grande para que asome la siguiente (80% ancho) */
+    flex: 0 0 calc(43% - 8px);
     scroll-snap-align: start;
   }
 
@@ -1984,7 +2038,6 @@ body {
   }
 
   /* Limitar títulos en móvil a un máximo de 3 líneas */
-  .card-title,
   .deportes-hero-title,
   .policiales-hero-title,
   .streaming-hero-title {
@@ -2291,19 +2344,22 @@ body.no-scroll {
   margin-top: 35px;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
   margin-right: calc(-1 * var(--page-padding));
   padding-right: var(--page-padding);
 }
 
 .laplata-grid-carousel::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
+  /* Chrome, Safari, Opera */
 }
 
 .laplata-card {
   display: flex;
   flex-direction: column;
-  flex: 0 0 calc(38.333% - 123px); /* Agrandadas un 15% horizontal y verticalmente */
+  flex: 0 0 calc(38.333% - 123px);
+  /* Agrandadas un 15% horizontal y verticalmente */
   scroll-snap-align: start;
 }
 
@@ -2538,16 +2594,10 @@ body.no-scroll {
   /* Aspecto plano */
 }
 
-.seccion-card-link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
-  color: inherit;
-}
-
-.vecinos-card-link {
+.seccion-card-link,
+.vecinos-card-link,
+.citybell-card-link,
+.saavedra-card-link {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -2640,13 +2690,15 @@ body.no-scroll {
 /* ==========================================
    CURSOR Y SELECCIÓN PARA CARRUSELES ARRASTRABLES
    ========================================== */
-[class*="-carousel"] {
+[class*="-carousel"],
+.cronicas-grid {
   cursor: grab;
   user-select: none;
   -webkit-user-select: none;
 }
 
-[class*="-carousel"]:active {
+[class*="-carousel"]:active,
+.cronicas-grid:active {
   cursor: grabbing;
 }
 
@@ -4132,4 +4184,557 @@ body.no-scroll {
   .noticia-comentario-input-wrapper {
     max-width: 100%;
   }
+}
+
+/* ==========================================
+   BANNER DE ACTIVACIÓN DE UBICACIÓN
+   ========================================== */
+
+.location-banner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border-left: 5px solid #009fe3;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 16px 20px;
+  max-width: 360px;
+  width: calc(100% - 40px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9998;
+  /* Menor que el sidebar (10000) pero sobre el contenido */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  font-family: var(--font-body);
+}
+
+.location-banner.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.location-banner-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.location-banner-icon {
+  width: 24px;
+  height: 24px;
+  fill: #009fe3;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.location-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.location-banner-title {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h4);
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.location-banner-desc {
+  font-family: var(--font-body);
+  font-size: var(--fs-p);
+  color: #475569;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.location-banner-btn {
+  font-family: var(--font-headings);
+  font-size: var(--fs-link);
+  font-weight: 700;
+  background-color: #009fe3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.location-banner-btn:hover {
+  background-color: #0087c2;
+}
+
+.location-banner-btn:active {
+  transform: scale(0.98);
+}
+
+.saavedra-hero-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ==========================================
+   SECCIÓN REPORTES RECIENTES
+   ========================================== */
+
+.reportes-recientes-section {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.reportes-recientes-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #cbd5e1 0%, rgba(203, 213, 225, 0) 100%);
+  margin-bottom: 25px;
+  height: 38px;
+}
+
+.reportes-recientes-title {
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-size: var(--fs-link);
+  font-weight: 900;
+  font-style: italic;
+  margin: 0;
+  padding: 8px 32px 8px 16px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.reportes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reporte-card {
+  position: relative;
+  background-color: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 18px 24px 18px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+.reporte-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  background-color: #009fe3;
+}
+
+.reporte-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(circle at bottom right, transparent 65%, #009fe3 67%);
+  pointer-events: none;
+}
+
+.reporte-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tag-reportado,
+.tag-categoria {
+  font-family: var(--font-headings);
+  font-size: 13px;
+  font-weight: 800;
+  font-style: italic;
+  padding: 3px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.tag-reportado {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.tag-categoria {
+  color: white;
+}
+
+.tag-otros {
+  background-color: #6b7280;
+}
+
+.tag-residuos {
+  background-color: #7c2d12;
+}
+
+.tag-calles {
+  background-color: #8b5cf6;
+}
+
+.tag-luminarias {
+  background-color: #a855f7;
+}
+
+.reporte-text {
+  font-family: var(--font-body);
+  font-size: var(--fs-link);
+  color: #1e293b;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.reporte-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.location-icon {
+  width: 14px;
+  height: 14px;
+  fill: #94a3b8;
+}
+
+.location-text {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: #94a3b8;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.red-platense-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-red-platense {
+  background-color: #ffd83b;
+  color: black;
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-style: italic;
+  font-size: var(--fs-link);
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: inline-block;
+}
+
+.btn-red-platense:hover {
+  background-color: #facc15;
+  transform: translateY(-1px);
+}
+
+.btn-red-platense:active {
+  transform: translateY(0);
+}
+
+/* Responsive styles for Reportes Recientes */
+@media (max-width: 767px) {
+  .reportes-recientes-section {
+    margin-top: 30px;
+    margin-bottom: 35px;
+  }
+
+  .reportes-recientes-header {
+    height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .reportes-recientes-title {
+    font-size: 14px;
+    padding: 6px 20px 6px 12px;
+  }
+
+  .reporte-card {
+    padding: 15px 18px 15px 22px;
+  }
+
+  .tag-reportado,
+  .tag-categoria {
+    font-size: 11px;
+    padding: 2px 10px;
+  }
+
+  .reporte-text {
+    font-size: var(--fs-link); /* 16px */
+    margin-bottom: 8px;
+  }
+
+  .location-text {
+    font-size: 12px;
+  }
+
+  .btn-red-platense {
+    font-size: var(--fs-link); /* 16px */
+    padding: 10px 24px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================
+   BANNER ACTIVACIÓN UBICACIÓN (LA PLATA)
+   ========================================== */
+.activate-location-banner {
+  background-color: #009fe3;
+  padding: 6px 32px 6px 20px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+  clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.activate-location-banner a {
+  color: white;
+  font-family: var(--font-headings);
+  font-size: var(--fs-link);
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+  transition: opacity 0.2s ease;
+}
+
+.activate-location-banner a:hover {
+  opacity: 0.9;
+}
+
+.has-banner-above {
+  margin-top: 5px !important;
+}
+
+@media (max-width: 767px) {
+  .activate-location-banner {
+    padding: 6px 24px 6px 12px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .has-banner-above {
+    margin-top: 5px !important;
+  }
+}
+
+/* ==========================================
+   CABECERA LA PLATA / RECIENTES
+   ========================================== */
+.laplata-header {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #46c3f7 0%, rgba(70, 195, 247, 0.4) 70%, rgba(255, 255, 255, 0) 100%);
+  height: 52px;
+  margin-bottom: 0px;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.laplata-title-badge {
+  background-color: #009fe3;
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 32px;
+  line-height: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 40px 0 24px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+  z-index: 2;
+}
+
+.laplata-divider {
+  background-color: white;
+  height: 100%;
+  width: 23px;
+  clip-path: polygon(20px 0, 100% 0, 3px 100%, 0 100%);
+  margin-left: -20px;
+  z-index: 1;
+}
+
+.laplata-sub-text {
+  color: white;
+  font-family: var(--font-headings);
+  font-weight: 800;
+  font-style: italic;
+  font-size: var(--fs-h4);
+  line-height: 1;
+  margin-left: 15px;
+  z-index: 2;
+}
+
+.laplata-header + .laplata-hero .laplata-hero-image-container {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.laplata-header + .laplata-hero .laplata-hero-image-container img {
+  border-top-left-radius: 0;
+}
+
+@media (max-width: 767px) {
+  .laplata-header {
+    height: 40px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+  }
+
+  .laplata-title-badge {
+    font-size: 20px;
+    padding: 0 25px 0 12px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 15px) 100%, 0 100%);
+  }
+
+  .laplata-divider {
+    width: 18px;
+    clip-path: polygon(15px 0, 100% 0, 3px 100%, 0 100%);
+    margin-left: -15px;
+  }
+
+  .laplata-sub-text {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+
+/* ==========================================
+   BANNER LA PLATA REPORTA EN NOTICIA 3
+   ========================================== */
+.noticia-lpr-banner {
+  background: url('images/LPR/fondo.png') no-repeat center;
+  background-size: cover;
+  border-radius: 8px;
+  padding: 40px 30px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.45);
+  border: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.noticia-lpr-banner-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.noticia-lpr-banner-title {
+  font-family: var(--font-headings);
+  font-size: var(--fs-h2);
+  font-weight: 900;
+  color: #009fe3;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 1), 3px 3px 0px rgba(0, 159, 227, 0.15);
+}
+
+.noticia-lpr-banner-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: #334155;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.noticia-lpr-banner-btn {
+  background-color: #ffd800;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-family: var(--font-headings);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.noticia-lpr-banner-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.noticia-lpr-banner-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 767px) {
+  .noticia-lpr-banner {
+    padding: 30px 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  .noticia-lpr-banner-title {
+    font-size: var(--fs-h3);
+  }
+
+  .noticia-lpr-banner-text {
+    font-size: 14px;
+  }
+
+  .noticia-lpr-banner-btn {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ==========================================
+   REPORTES RECIENTES EN LA PLATA REPORTA
+   ========================================== */
+.lpr-main .reportes-recientes-section {
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  box-sizing: border-box;
 }

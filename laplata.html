@@ -125,11 +125,17 @@
             <!-- Columna Izquierda: Portada y Grilla de Noticias -->
             <div class="laplata-main">
 
+                <!-- Cabecera La Plata / Recientes -->
+                <div class="laplata-header">
+                    <div class="laplata-title-badge">LA PLATA</div>
+                    <div class="laplata-divider"></div>
+                    <span class="laplata-sub-text">Recientes</span>
+                </div>
+
                 <!-- Portada Grande (Hero) -->
                 <div class="laplata-hero">
                     <div class="laplata-hero-image-container">
                         <img src="images/La Plata/LaPlataPortada.png" alt="Portada de La Plata">
-                        <div class="laplata-badge-zone">La Plata</div>
                         <div class="laplata-badge-theme">Tribunales</div>
                     </div>
                     <h2 class="laplata-hero-title">
@@ -339,6 +345,11 @@
 
         </div>
 
+        <!-- Banner de activación de ubicación -->
+        <div id="activateLocationBanner" class="activate-location-banner" style="display: none;">
+            <a href="#" id="activateLocationLink">Activa la ubicación para enterarte de las noticias de tu barrio</a>
+        </div>
+
         <!-- Sección Gonnet -->
         <section class="gonnet-section">
             <div class="gonnet-header">
@@ -451,14 +462,16 @@
 
                 <!-- Tarjeta 2 (City Bell 2) -->
                 <article class="citybell-card">
-                    <div class="card-image-container">
-                        <img src="images/La Plata/cityBell (2).png" alt="Noticia City Bell 2">
-                    </div>
-                    <h4 class="card-title">
-                        <span class="title-highlight">¿De qué se trata?.</span>
-                        <span class="title-text">La pista que podría cambiar el rumbo de la investigación para
-                            esclarecer el crimen en City Bell</span>
-                    </h4>
+                    <a href="noticia1.html" class="citybell-card-link">
+                        <div class="card-image-container">
+                            <img src="images/La Plata/cityBell (2).png" alt="Noticia City Bell 2">
+                        </div>
+                        <h4 class="card-title">
+                            <span class="title-highlight">¿De qué se trata?.</span>
+                            <span class="title-text">La pista que podría cambiar el rumbo de la investigación para
+                                esclarecer el crimen en City Bell</span>
+                        </h4>
+                    </a>
                 </article>
 
                 <!-- Tarjeta 3 (City Bell 3) -->
@@ -496,31 +509,35 @@
             </div>
 
             <!-- Saavedra Hero (Top Row) -->
-            <div class="saavedra-hero">
-                <div class="saavedra-hero-image-container">
-                    <img src="images/La Plata/saavedra (5).png" alt="Parque Saavedra Hero">
-                </div>
-                <div class="saavedra-hero-info">
-                    <div class="saavedra-hero-badge-container">
-                        <span class="saavedra-hero-badge">Sobre las obras</span>
+            <a href="noticia3.html" class="saavedra-hero-link-wrapper">
+                <div class="saavedra-hero">
+                    <div class="saavedra-hero-image-container">
+                        <img src="images/La Plata/saavedra (5).png" alt="Parque Saavedra Hero">
                     </div>
-                    <h2 class="saavedra-hero-title">¿Cuáles fueron los planteos de los vecinos y qué respondió la
-                        Municipalidad?</h2>
+                    <div class="saavedra-hero-info">
+                        <div class="saavedra-hero-badge-container">
+                            <span class="saavedra-hero-badge">Sobre las obras</span>
+                        </div>
+                        <h2 class="saavedra-hero-title">¿Cuáles fueron los planteos de los vecinos y qué respondió la
+                            Municipalidad?</h2>
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Saavedra Carousel (Bottom Row) -->
             <div class="saavedra-carousel">
                 <!-- Tarjeta 1 (Saavedra 1) -->
                 <article class="saavedra-card">
-                    <div class="card-image-container">
-                        <img src="images/La Plata/saavedra (1).png" alt="Noticia Parque Saavedra 1">
-                    </div>
-                    <h4 class="card-title">
-                        <span class="title-highlight">Obras en el Parque Saavedra.</span>
-                        <span class="title-text">Abrirán una rambla cercana al Hospital de Niños para agilizar el acceso
-                            de las ambulancias</span>
-                    </h4>
+                    <a href="noticia3.html" class="saavedra-card-link">
+                        <div class="card-image-container">
+                            <img src="images/La Plata/saavedra (1).png" alt="Noticia Parque Saavedra 1">
+                        </div>
+                        <h4 class="card-title">
+                            <span class="title-highlight">Obras en el Parque Saavedra.</span>
+                            <span class="title-text">Abrirán una rambla cercana al Hospital de Niños para agilizar el acceso
+                                de las ambulancias</span>
+                        </h4>
+                    </a>
                 </article>
 
                 <!-- Tarjeta 2 (Saavedra 2) -->
